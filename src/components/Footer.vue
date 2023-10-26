@@ -41,7 +41,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <div class="copy" data-aos="fade-up" data-aos-delay="200">
+                    <div class="copy">
                         <p>&copy;2023 All Right Reserved. Design By Mehedi Hasan</p>
                     </div>
                 </div>

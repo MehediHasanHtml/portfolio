@@ -26,7 +26,7 @@ onMounted(() => {
         </template>
 
         <template v-slot:button>
-            <a class="cus-btn" href="../img/Mehedi_Hasan_CV.pdf" target="_blank">See Resume</a>
+            <a class="cus-btn" href="/pdf/Mehedi_Hasan_CV.pdf" target="_blank">See Resume</a>
         </template>
         
     </Abouts>
