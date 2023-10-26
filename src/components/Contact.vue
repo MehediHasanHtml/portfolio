@@ -8,12 +8,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 p-0">
-                <div class="map">
+                <div class="map"  data-aos="fade-up" data-aos-delay="100">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8682.057144089302!2d90.36762249401818!3d23.80595922866292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d6f6b8c2ff%3A0x3b138861ee9c8c30!2sMirpur%2010%20Roundabout%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1697829175784!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="contacts">
+                <div class="contacts"  data-aos="fade-up" data-aos-delay="150">
                     <h3>Contact</h3>
                     <slot name="contactinfo">
 

@@ -43,7 +43,7 @@ const faqs = ref([
                 </div>
                 <div class="faq">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item" v-for="faq in faqs" :key="faq.id">
+                        <div class="accordion-item" v-for="faq in faqs" :key="faq.id"  data-aos="fade-up" data-aos-delay="100">
                             <h2 class="accordion-header">
                             <button @click="faq.isOpen = !faq.isOpen" :class="faq.isOpen? 'df': 'collapsed'" class="accordion-button" type="button" data-bs-toggle="collapse" :data-bs-target="'#collapseOne_'+ faq.id" :aria-expanded="faq.isOpen? true : false" :aria-controls="'collapseOne_' + faq.id">
                                 {{faq.quesion}}

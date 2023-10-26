@@ -48,7 +48,7 @@ const works = ref([
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4" v-for="work in works" :key="work.id">
-                    <div class="work">
+                    <div class="work"  data-aos="fade-up" data-aos-delay="100">
                         <a :href="work.link" target="_blank"><img class="img-fluid" :src="work.img" :alt="work.img" loading="lazy"></a>
                     </div>
                 </div>

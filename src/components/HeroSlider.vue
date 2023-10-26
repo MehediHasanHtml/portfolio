@@ -41,11 +41,11 @@ const sliders = ref([
                         </Slide>
                     </Carousel>
                     <div class="col-lg-6">
-                        <div class="hero-content">
-                            <h1>{{ title }}</h1>
-                            <p>{{ subtitle }}</p>
-                            <img class="img-fluid my-3" src="/img/techlogy.png" alt="techlogy" loading="lazy">
-                            <div class="btns">
+                        <div class="hero-content" >
+                            <h1  data-aos="fade-up" data-aos-delay="100">{{ title }}</h1>
+                            <p  data-aos="fade-up" data-aos-delay="200">{{ subtitle }}</p>
+                            <img class="img-fluid my-3" src="/img/techlogy.png" alt="techlogy" loading="lazy"  data-aos="fade-up" data-aos-delay="250">
+                            <div class="btns"  data-aos="fade-up" data-aos-delay="300">
                                 <router-link to="/portfolio">Portfolio</router-link>
                                 <router-link to="/services"> Services</router-link>
                             </div>

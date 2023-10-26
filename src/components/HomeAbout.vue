@@ -38,7 +38,7 @@ const options = {
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center">
-                    <div class="content">
+                    <div class="content" data-aos="fade-up" data-aos-delay="50">
                         <slot name="header"></slot>
                         <p>Hello, I am a professional Frontend developer with an overall 4+ years of experience also, an expert in HTML5, CSS3, JavaScript, jQuery, Vue JS, Bootstrap, Re-design, HTML & CSS bug fixes, PSD to HTML, Figma to HTML and landing page design with SEO friendly, mobile responsive and pixel-perfect conversion.</p>
                         <p> Web design is my hobby and passion. if you have any kind of work related to my skills then please contact me. Have a good day.</p>
@@ -48,7 +48,7 @@ const options = {
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="content">
+                    <div class="content"  data-aos="fade-up" data-aos-delay="100">
                         <Bar :data="data" :options="options" />
                     </div>
                 </div>

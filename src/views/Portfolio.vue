@@ -16,7 +16,7 @@ onMounted(() => {
 <title>{{ title }}</title>
 <Banners class="portfolio" banners="Recent Work"/>
 
-<div class="notes">
+<div class="notes"  data-aos="fade-up" data-aos-delay="50">
       <p>NB: I worked on many projects but I can't share this because the company is out of rules 👨‍💻</p>
 </div>
 

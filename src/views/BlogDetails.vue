@@ -38,7 +38,7 @@ onMounted(() => {
     <div class="containers">
         <div class="row">
             <div class="col-md-8" v-for="post in Blogs" :key="post.id">
-                <div class="blog" v-if="id ==  post.id">
+                <div class="blog" v-if="id ==  post.id"  data-aos="fade-up" data-aos-delay="100">
 
                     <img class="img-fluid" :src="'../'+post.img" :alt="post.title" loading="lazy">
                   

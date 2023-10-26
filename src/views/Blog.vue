@@ -32,7 +32,7 @@ onMounted(() => {
     <div class="containers">
         <div class="row">
             <div class="col-md-6 col-lg-4" v-for="post in Blogs" :key="post.id">
-                <div class="blog">
+                <div class="blog"  data-aos="fade-up" data-aos-delay="100">
                     <router-link :to="{name: 'post', params: {id: post.id}}">
                         <img class="img-fluid" :src="post.img" :alt="post.title" loading="lazy">
                     </router-link>

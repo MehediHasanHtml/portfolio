@@ -100,12 +100,12 @@ const trainings = ref([
     <div class="containers">
         <div class="row">
             <div class="col-lg-5">
-                <div class="title text-end">
+                <div class="title text-end"  data-aos="fade-up" data-aos-delay="100">
                     <h2>Education</h2>
                 </div>
             </div>
             <div class="col-lg-7">
-                <div class="educations">
+                <div class="educations"  data-aos="fade-up" data-aos-delay="100">
                     <ul>
                         <li v-for="education in educatios" :key="education.id">
                             <h3>{{ education.title }}</h3>
@@ -117,12 +117,12 @@ const trainings = ref([
                 </div>
             </div>
             <div class="col-lg-5">
-                <div class="title text-end">
+                <div class="title text-end"  data-aos="fade-up" data-aos-delay="150">
                     <h2>Employment History</h2>
                 </div>
             </div>
             <div class="col-lg-7">
-                <div class="educations">
+                <div class="educations"  data-aos="fade-up" data-aos-delay="150">
                     <ul>
                         <li v-for="employe in employment" :key="employe.id">
                             <h3>{{ employe.title }}</h3>
@@ -134,12 +134,12 @@ const trainings = ref([
                 </div>
             </div>
             <div class="col-lg-5">
-                <div class="title text-end">
+                <div class="title text-end"  data-aos="fade-up" data-aos-delay="200">
                     <h2>Training Summary</h2>
                 </div>
             </div>
             <div class="col-lg-7">
-                <div class="educations">
+                <div class="educations"  data-aos="fade-up" data-aos-delay="200">
                     <ul>
                         <li v-for="training in trainings" :key="training.id">
                             <h3>{{ training.title }}</h3>

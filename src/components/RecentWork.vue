@@ -91,7 +91,7 @@ const works = ref([
         <div class="containers">
             <div class="row">
                 <div class="col-12">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist"  data-aos="fade-up" data-aos-delay="50">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="PSD-tab" data-bs-toggle="tab" data-bs-target="#PSD-tab-pane" type="button" role="tab" aria-controls="PSD-tab-pane" aria-selected="true">PSD to HTML</button>
                         </li>
@@ -103,7 +103,7 @@ const works = ref([
                         <div class="tab-pane fade show active" id="PSD-tab-pane" role="tabpanel" aria-labelledby="PSD-tab" tabindex="0">
                             <div class="row"> 
                                 <div class="col-md-6 col-lg-4" v-for="work in works" :key="work.id">
-                                    <div class="work" v-if="work.category == 'psdhtml'">
+                                    <div class="work" v-if="work.category == 'psdhtml'"  data-aos="fade-up" data-aos-delay="100">
                                         <a :href="work.link" target="_blank"><img class="img-fluid" :src="work.img" :alt="work.img" loading="lazy"></a>
                                     </div>
                                 </div>
@@ -113,7 +113,7 @@ const works = ref([
                         <div class="tab-pane fade" id="Vue-tab-pane" role="tabpanel" aria-labelledby="Vue-tab" tabindex="0">
                             <div class="row"> 
                                 <div class="col-md-6 col-lg-4" v-for="work in works" :key="work.id">
-                                    <div class="work" v-if="work.category == 'vuejs'">
+                                    <div class="work" v-if="work.category == 'vuejs'"  data-aos="fade-up" data-aos-delay="100">
                                         <a :href="work.link" target="_blank"><img class="img-fluid" :src="work.img" :alt="work.img" loading="lazy"></a>
                                     </div>
                                 </div>

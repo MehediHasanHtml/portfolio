@@ -91,7 +91,7 @@ const settings = ({
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-8 offset-lg-2">
-                    <div class="testmoni">
+                    <div class="testmoni"  data-aos="fade-up" data-aos-delay="100">
                         <Carousel  :autoplay="5000" :wrap-around="true" :transition="500" :breakpoints="settings">
                             <Slide v-for="review in reviews" :key="review.id">
                                 <div class="carousel__item">

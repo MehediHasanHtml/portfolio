@@ -17,7 +17,7 @@ onMounted(() => {
 <section class="notfound-area">
     <div class="containers">
         <div class="roq">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center"  data-aos="fade-up" data-aos-delay="100">
                 <div class="title">
                     <h2>404 Page Not Found! 🤪</h2>
                     <router-link class="cus-btn" to="/"><i class="bi bi-house-door-fill"></i> Go back to home</router-link>
