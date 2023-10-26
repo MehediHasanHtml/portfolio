@@ -1,0 +1,70 @@
+import { createRouter, createWebHistory } from "vue-router";
+import NProgress from 'nprogress';
+
+import Home from '../views/Home.vue'
+import About from '../views/About.vue'
+import Contact from '../views/Contact.vue'
+import Services from '../views/Services.vue'
+import Portfolio from '../views/Portfolio.vue'
+import Blog from '../views/Blog.vue'
+import BlogDetails from '../views/BlogDetails.vue'
+import NotFound from '../views/NotFound.vue'
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes: [{
+            path: '/',
+            component: Home,
+            name: Home
+        },
+        {
+            path: '/about',
+            component: About,
+            name: About
+        },
+        {
+            path: '/contact',
+            component: Contact,
+            name: Contact
+        },
+        {
+            path: '/services',
+            component: Services,
+            name: Services
+        },
+        {
+            path: '/portfolio',
+            component: Portfolio,
+            name: Portfolio
+        },
+        {
+            path: '/blog',
+            component: Blog,
+            name: Blog
+
+        },
+        {
+            path: '/blogdetails/:id',
+            component: BlogDetails,
+            name: 'post'
+        },
+        {
+            path: '/:pathMatch(.*)*',
+            component: NotFound,
+            name: NotFound
+        },
+    ],
+})
+
+router.beforeResolve((to, from, next) => {
+    if (to.name) {
+        NProgress.start()
+    }
+    next()
+})
+
+router.afterEach(() => {
+    NProgress.done()
+})
+
+export default router
