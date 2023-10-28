@@ -1,5 +1,5 @@
 <script setup>
-import {ref, onMounted} from 'vue'
+import {ref} from 'vue'
 import HeroSlider from '../components/HeroSlider.vue'
 import HomeAbout from '../components/HomeAbout.vue';
 import Services from '../components/Services.vue';
@@ -9,10 +9,6 @@ import Contact from '../components/Contact.vue';
 import FAQs from '../components/FAQ.vue';
 
 const title = ref('Home | Mehedi Hasan');
-
-onMounted(() => {
-      window.scrollTo(0, 0);
-});
 
 </script>
 

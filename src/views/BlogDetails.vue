@@ -1,5 +1,5 @@
 <script setup>
-import {ref, reactive, onBeforeMount, onMounted} from 'vue'
+import {ref, reactive, onBeforeMount} from 'vue'
 const title = ref('Blog Details | Mehedi Hasan');
 import Banners from '../components/Banners.vue';
 import {useRoute } from 'vue-router'
@@ -8,10 +8,6 @@ const route = useRoute()
 
 const id = route.params.id;
 
-
-onMounted(() => {
-      window.scrollTo(0, 0);
-});
 // const post = reactive({})
 
 // onBeforeMount(()=>{
@@ -38,7 +34,7 @@ onMounted(() => {
     <div class="containers">
         <div class="row">
             <div class="col-md-8" v-for="post in Blogs" :key="post.id">
-                <div class="blog" v-if="id ==  post.id"  data-aos="fade-up" data-aos-delay="100">
+                <div class="blog" v-if="id ==  post.id"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
 
                     <img class="img-fluid" :src="'../'+post.img" :alt="post.title" loading="lazy">
                   

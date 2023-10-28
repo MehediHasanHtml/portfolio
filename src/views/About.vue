@@ -1,22 +1,20 @@
 <script setup>
-import {ref, onMounted} from 'vue'
-
-import Abouts from '../components/HomeAbout.vue';
+import {ref} from 'vue';
+import HomeAbout from '../components/HomeAbout.vue';
 import Education from '../components/Education.vue';
 import Banners from '../components/Banners.vue';
 const title = ref('About | Mehedi Hasan');
 
-onMounted(() => {
-      window.scrollTo(0, 0);
-});
+
 
 </script>
 
 <template>
+    
     <title>{{ title }}</title>
     <Banners class="about" banners="About"></Banners>
 
-    <Abouts>
+    <HomeAbout>
         <template v-slot:header>
         <div class="profile">
             <img class="img-fluid" src="/img/Mehedi-Hasan.jpg" alt="Mehedi Hasan, Frentend developer" loading="lazy">
@@ -29,7 +27,7 @@ onMounted(() => {
             <a class="cus-btn" href="/pdf/Mehedi_Hasan_CV.pdf" target="_blank">See Resume</a>
         </template>
         
-    </Abouts>
+    </HomeAbout>
 
     <Education/>
 

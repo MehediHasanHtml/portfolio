@@ -52,7 +52,7 @@ const works = ref([
                         <a :href="work.link" target="_blank"><img class="img-fluid" :src="work.img" :alt="work.img" loading="lazy"></a>
                     </div>
                 </div>
-                <div class="col-12 text-center">
+                <div class="col-12 text-center"  data-aos="fade-up" data-aos-delay="150">
                     <router-link to="/portfolio" class="cus-btn">See more</router-link>
                 </div>
             </div>

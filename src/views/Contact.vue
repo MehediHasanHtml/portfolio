@@ -1,12 +1,8 @@
 <script setup>
-import {ref, onMounted} from 'vue'
+import {ref} from 'vue'
 const title =ref('Contact | Mehedi Hasan')
 import Banners from '../components/Banners.vue';
 import ContactVue from '../components/Contact.vue';
-
-onMounted(() => {
-      window.scrollTo(0, 0);
-});
 
 </script>
 

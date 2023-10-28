@@ -8,14 +8,14 @@
         <div class="containers">
             <div class="row">
                 <div class="col-md-6 col-lg-4 footerrow">
-                    <div class="footers-grid"  data-aos="fade-up" data-aos-delay="50">
+                    <div class="footers-grid"  data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                         <h3>Mehedi Hasan</h3>
                         <p><i class="bi bi-envelope-fill"></i> Email: mehedihtml@gmail.com</p>
                         <p><i class="bi bi-skype"></i> Skype: mehedihasancmt2</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 footerrow">
-                    <div class="footers-grid"  data-aos="fade-up" data-aos-delay="100">
+                    <div class="footers-grid"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <h3>Usefull links</h3>
                         <ul>
                             <li><router-link to="/">Home</router-link></li>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 footerrow">
-                    <div class="footers-grid"  data-aos="fade-up" data-aos-delay="150">
+                    <div class="footers-grid"  data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
                         <h3>Social</h3>
                         <ul class="social">
                             <li><a href="https://www.facebook.com/md.mehedi.hasan.cse/" target="_blank"><i class="bi bi-facebook"></i></a></li>

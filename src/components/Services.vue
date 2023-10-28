@@ -55,7 +55,7 @@ const services = ref( [
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4" v-for="service in services" :key="service.id">
-                    <div class="services shadow"  data-aos="fade-up" data-aos-delay="100">
+                    <div class="services shadow"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                         <a :href="service.link" target="_blank"><img class="img-fluid" :src="service.img" :alt="service.servicesName" loading="lazy"></a>
                         <h2><a :href="service.link">{{ service.servicesName }}</a></h2>
                     </div>

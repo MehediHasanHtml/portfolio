@@ -1,12 +1,8 @@
 <script setup>
-import {ref, onBeforeMount, reactive, onMounted} from 'vue'
+import {ref, onBeforeMount, reactive} from 'vue'
 const title = ref('Blog | Mehedi Hasan');
 import Banners from '../components/Banners.vue';
 import Blogs from '../store/store.json';
-
-onMounted(() => {
-      window.scrollTo(0, 0);
-});
 
 
 // const posts = ref([])
@@ -32,7 +28,7 @@ onMounted(() => {
     <div class="containers">
         <div class="row">
             <div class="col-md-6 col-lg-4" v-for="post in Blogs" :key="post.id">
-                <div class="blog"  data-aos="fade-up" data-aos-delay="100">
+                <div class="blog"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                     <router-link :to="{name: 'post', params: {id: post.id}}">
                         <img class="img-fluid" :src="post.img" :alt="post.title" loading="lazy">
                     </router-link>

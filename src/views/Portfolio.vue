@@ -1,14 +1,10 @@
 <script setup>
-import {ref, onMounted} from 'vue'
+import {ref} from 'vue'
 import Banners from '../components/Banners.vue';
 import RecentWork from '../components/RecentWork.vue'
 import FAQ from '../components/FAQ.vue'
 
 const title = ref('Portfolio | Mehedi Hasan');
-
-onMounted(() => {
-      window.scrollTo(0, 0);
-});
 
 </script>
 
@@ -16,7 +12,7 @@ onMounted(() => {
 <title>{{ title }}</title>
 <Banners class="portfolio" banners="Recent Work"/>
 
-<div class="notes"  data-aos="fade-up" data-aos-delay="50">
+<div class="notes">
       <p>NB: I worked on many projects but I can't share this because the company is out of rules 👨‍💻</p>
 </div>
 

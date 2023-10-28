@@ -1,11 +1,7 @@
 <script setup>
-import {ref, onMounted} from 'vue'
+import {ref} from 'vue'
 import Banners from '../components/Banners.vue'
 const title = ref('404 page not found | Mehedi Hasan');
-
-onMounted(() => {
-      window.scrollTo(0, 0);
-});
 
 
 </script>
@@ -17,7 +13,7 @@ onMounted(() => {
 <section class="notfound-area">
     <div class="containers">
         <div class="roq">
-            <div class="col-12 text-center"  data-aos="fade-up" data-aos-delay="100">
+            <div class="col-12 text-center"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <div class="title">
                     <h2>404 Page Not Found! 🤪</h2>
                     <router-link class="cus-btn" to="/"><i class="bi bi-house-door-fill"></i> Go back to home</router-link>
