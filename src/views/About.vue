@@ -6,7 +6,6 @@ import Banners from '../components/Banners.vue';
 const title = ref('About | Mehedi Hasan');
 
 
-
 </script>
 
 <template>
