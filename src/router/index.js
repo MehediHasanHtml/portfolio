@@ -12,6 +12,12 @@ import NotFound from '../views/NotFound.vue'
 
 const router = createRouter({
     history: createWebHistory(),
+
+    scrollBehavior(to, from, savedPosition) {
+        // always scroll to top
+        return { top: 0, behavior: 'smooth' }
+    },
+
     routes: [{
             path: '/',
             component: Home,

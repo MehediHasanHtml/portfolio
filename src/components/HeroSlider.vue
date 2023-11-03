@@ -4,13 +4,13 @@ import { Carousel, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
 const title = 'Frontend Developer'
-const subtitle = "Hello, If you're looking for a frontend developer to convert PSD to HTML, Figma to HTML, and landing page design With SEO friendly and pixel-perfect using Bootstrap or HTML CSS JS then this is exactly what I specialize in. Talk about a perfect match. 🙋"
+const subtitle = "Hello, If you're looking for a frontend developer to convert PSD to HTML, Figma to HTML, Figma to Vue js and landing page design With SEO friendly and pixel-perfect using Vue js, Bootstrap then this is exactly what I specialize in. Talk about a perfect match. 🙋"
 
 const sliders = ref([
     {
         id: 1,
         img: '/img/slider1.jpg',
-        alt: 'front end developer, mehedi hasan'
+        alt: 'vue js developer, mehedi hasan'
     },
     {
         id: 2,

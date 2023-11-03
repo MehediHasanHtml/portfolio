@@ -72,7 +72,7 @@ const trainings = ref([
     },
     {
         id: 3,
-        title: 'Web designer and develope',
+        title: 'Web designer and developer',
         topic: 'HTML, CSS, JavaScript, PHP, mySQL, etc',
         institute: 'Daffodil international professional training institute (DIPTI)',
         duration: '4 months',
