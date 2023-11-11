@@ -197,6 +197,8 @@ const sliders = ref([
     text-align: center;
 }
 .hero-content {
+    transform: inherit;
+    top: 60px;
     width: 90%;
 }
 .carousel__item img {
@@ -222,9 +224,13 @@ const sliders = ref([
 
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 575.98px) {
 .carousel__item img {
     height: 580px;
+}
+.hero-content {
+    transform: inherit;
+    top: 40px;
 }
 
 }
