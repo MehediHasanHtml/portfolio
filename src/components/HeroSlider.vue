@@ -77,7 +77,7 @@ const sliders = ref([
     background: rgba(41, 48, 66, 0.8);
 }
 .carousel__item img {
-    height: 700px;
+    height: calc(100vh - 82px);
     width: 100%;
     object-fit: cover;
     object-position: top;
@@ -91,10 +91,11 @@ const sliders = ref([
 
 .hero-content {
     position: absolute;
-    top: 22%;
+    top: 50%;
     left: 5%;
     z-index: 2;
     width: 50%;
+    transform: translate(0, -50%);
 }
 
 .hero-content h1 {
@@ -159,9 +160,7 @@ const sliders = ref([
     font-size: 50px;
 }
 
-.hero-content {
-    top: 22%;
-}
+
 
 
 }
@@ -198,7 +197,6 @@ const sliders = ref([
     text-align: center;
 }
 .hero-content {
-    top: 60px;
     width: 90%;
 }
 .carousel__item img {
@@ -226,7 +224,7 @@ const sliders = ref([
 
 @media (max-width: 767.98px) {
 .carousel__item img {
-    height: 550px;
+    height: 580px;
 }
 
 }

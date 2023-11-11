@@ -37,6 +37,12 @@ const services = ref( [
         img: "/img/responsive-landing-page-design.jpg",
         link: "https://www.fiverr.com/share/XXzwgV"
     },
+    {
+        id:7,
+        servicesName: "I will be your frontend developer with figma to HTML, vue js, bootstrap",
+        img: "/img/frontend-developer-figma-to-vue-js.png",
+        link: "https://www.fiverr.com/s/o2VDgx"
+    },
 ]);
 
 
