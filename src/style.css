@@ -261,6 +261,10 @@ a.cus-btn:hover {
     background: #293042 !important;
 }
 
+.apexcharts-toolbar {
+    display: none !important;
+}
+
 @media (max-width: 991.98px) {
     .title h2 {
         font-size: 30px;

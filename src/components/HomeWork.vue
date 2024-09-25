@@ -63,23 +63,31 @@ const works = ref([
 
 
 <style scoped>
+
 .home-work {
     padding: 80px 0;
 }
 .work {
     padding: 15px;
     margin-bottom: 35px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     border-radius: 10px;
 }
 .work img {
     height: 230px;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }
 .work:hover {
-    box-shadow: var(--bs-box-shadow)!important;
+    -webkit-box-shadow: var(--bs-box-shadow)!important;
+            box-shadow: var(--bs-box-shadow)!important;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 

@@ -58,7 +58,7 @@
                                         <a href="https://www.facebook.com/md.mehedi.hasan.cse/" target="_blank"><i class="bi bi-facebook"></i></a>
                                         <a href="https://www.linkedin.com/in/mehedi-hasan-020a47168/" target="_blank"><i class="bi bi-linkedin"></i></a>
                                         <a href="https://twitter.com/mehedihasan_cse " target="_blank"><i class="bi bi-twitter-x"></i></a>
-                                        <a href="https://github.com/experthtml" target="_blank"><i class="bi bi-github"></i></a>
+                                        <a href="https://github.com/MehediHasanHtml" target="_blank"><i class="bi bi-github"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -74,6 +74,7 @@
 </template>
 
 <style scoped>
+
 .header-area {
     padding: 10px 0;
     position: fixed;
@@ -92,11 +93,13 @@
     font-size: 16px;
     color: #36344D;
     font-weight: 500;
-    filter: contrast(1);
+    -webkit-filter: contrast(1);
+            filter: contrast(1);
 }
 .router-link-exact-active.nav-link {
     color: #68d388 !important;
-    filter: contrast(1);
+    -webkit-filter: contrast(1);
+            filter: contrast(1);
 }
 
 .me-auto {
@@ -113,7 +116,8 @@
     color: #36344D;
     font-weight: 500;
     margin-left: 8px;
-    filter: contrast(1);
+    -webkit-filter: contrast(1);
+            filter: contrast(1);
 }
 .navbar-toggler-icon {
     background-image: none;
@@ -129,11 +133,11 @@
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
-    box-shadow: inherit;
+    -webkit-box-shadow: inherit;
+            box-shadow: inherit;
 }
 
 
 }
-
 
 </style>

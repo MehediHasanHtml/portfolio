@@ -34,7 +34,7 @@
                             <li><a href="https://www.facebook.com/md.mehedi.hasan.cse/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/mehedi-hasan-020a47168/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
                             <li><a href="https://twitter.com/mehedihasan_cse " target="_blank"><i class="bi bi-twitter-x"></i></a></li>
-                            <li><a href="https://github.com/experthtml" target="_blank"><i class="bi bi-github"></i></a></li>
+                            <li><a href="https://github.com/MehediHasanHtml" target="_blank"><i class="bi bi-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="copy">
-                        <p>&copy; 2023 All Right Reserved. Design By Mehedi Hasan</p>
+                        <p>&copy; 2024 All Right Reserved. Design By Mehedi Hasan</p>
                     </div>
                 </div>
             </div>
@@ -53,6 +53,7 @@
 
 
 <style scoped>
+
 .footer-area {
     padding: 50px 0 0 0;
     background: #68d388;
@@ -99,8 +100,12 @@
     color: #293042;
 }
 .footerrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 
@@ -110,7 +115,6 @@
 }
 
 }
-
 
 
 </style>

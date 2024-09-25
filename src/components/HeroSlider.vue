@@ -4,7 +4,7 @@ import { Carousel, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
 const title = 'Frontend Developer'
-const subtitle = "Hello, If you're looking for a frontend developer to convert PSD to HTML, Figma to HTML, Figma to Vue js and landing page design With SEO friendly and pixel-perfect using Vue js, Bootstrap then this is exactly what I specialize in. Talk about a perfect match. 🙋"
+const subtitle = "Hello, If you're looking for a frontend developer to convert PSD to HTML, Figma to HTML, Figma to Vue js and landing page design With SEO friendly and pixel-perfect using Vue js, Element Plus, Bootstrap 5 then this is exactly what I specialize in. Talk about a perfect match. 👇"
 
 const sliders = ref([
     {
@@ -61,6 +61,7 @@ const sliders = ref([
 </template>
 
 <style>
+
 .hero-slider {
     position: relative;
 }
@@ -79,8 +80,10 @@ const sliders = ref([
 .carousel__item img {
     height: calc(100vh - 82px);
     width: 100%;
-    object-fit: cover;
-    object-position: top;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
 }
 .carousel__slide {
     display: block;
@@ -92,10 +95,14 @@ const sliders = ref([
 .hero-content {
     position: absolute;
     top: 50%;
-    left: 5%;
+    left: 50%;
     z-index: 2;
-    width: 50%;
-    transform: translate(0, -50%);
+    max-width: 900px;
+    width: 90%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .hero-content h1 {
@@ -104,7 +111,8 @@ const sliders = ref([
     line-height: 1.3;
     font-weight: 600;
     margin-bottom: 15px;
-    filter: contrast(1);
+    -webkit-filter: contrast(1);
+            filter: contrast(1);
 }
 
 .hero-content p {
@@ -113,12 +121,20 @@ const sliders = ref([
     line-height: 1.5;
     font-weight: 500;
     margin-bottom: 15px;
-    filter: contrast(1);
+    -webkit-filter: contrast(1);
+            filter: contrast(1);
 }
 
 .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 25px;
 }
 
@@ -132,10 +148,15 @@ const sliders = ref([
     background: #68d388;
     margin-right: 15px;
     border-radius: 30px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    filter: contrast(1);
+    -webkit-filter: contrast(1);
+            filter: contrast(1);
 }
 .btns a:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background: #68d388 !important;
 }
@@ -145,23 +166,11 @@ const sliders = ref([
 
 
 
-
-@media (min-width: 1920.98px) {
-.hero-content {
-    left: 10%;
-}
-
-}
-
-
 @media (max-width: 1199.98px) {
 
 .hero-content h1 {
     font-size: 50px;
 }
-
-
-
 
 }
 
@@ -173,12 +182,9 @@ const sliders = ref([
 .hero-content p {
     font-size: 16px;
 }
-.hero-content {
-    width: 90%;
-}
 
 .carousel__item img {
-    height: 600px;
+    height: 640px;
 }
 
 .hero-content img {
@@ -193,21 +199,15 @@ const sliders = ref([
     font-size: 30px;
 }
 
-.hero-content  {
-    text-align: center;
-}
-.hero-content {
-    transform: inherit;
-    top: 60px;
-    width: 90%;
-}
 .carousel__item img {
-    height: 600px;
+    height: 630px;
 }
 
 .btns {
     display: block;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 25px;
 }
 .btns a {
@@ -226,12 +226,9 @@ const sliders = ref([
 
 @media (max-width: 575.98px) {
 .carousel__item img {
-    height: 580px;
+    height: 630px;
 }
-.hero-content {
-    transform: inherit;
-    top: 40px;
-}
+
 
 }
 

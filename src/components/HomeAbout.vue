@@ -1,27 +1,61 @@
 <script setup>
 import {ref} from 'vue'
 
-import {Chart, Title, Tooltip, Legend, BarElement,CategoryScale,LinearScale} from 'chart.js'
-import { Bar } from 'vue-chartjs'
 
-Chart.register(CategoryScale, LinearScale, BarElement,Title, Tooltip, Legend)
+     
+const series = ref( [{
+    data: [95, 90, 70, 80, 60, 90, 50, 65, 90, 70]
+    }]
+);
 
-const data = {
-  labels: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Vue js', 'Bootstrap', 'SEO'],
-  datasets: [{
-        label: 'Skills', backgroundColor: '#68d388',
-        data: [95, 90, 70, 80, 60, 90, 50
-        ]}
-    ]
-}
 
-// JSON Array Kata-Kati--->
+ const chartOptions = ref({
+    chart: {
+        height: 400,
+        type: 'bar'
+    },
+    colors: ['#FF4C1E', '#004CE8', '#FFDF00', '#78CFF5', '#41B883', '#8011FA', '#009245', '#F05033', '#409EFF', '#FF7362'],
+    plotOptions: {
+        bar: {
+            columnWidth: '45%',
+            distributed: true,
+        }
+    },
+    dataLabels: {
+        enabled: false
+    },
+    stroke: {
+        curve: 'smooth'
+    },
+    legend: {
+        position: 'top'
+    },
+    xaxis: {
+        categories: [
+            ['HTML5'],
+            ['CSS3'],
+            ['JavaScript'],
+            ['jQuery'],
+            ['Vue JS'],
+            ['Bootstrap'],
+            ['SEO'],
+            ['Git'],
+            ['Element Plus'],
+            ['Figma'],
+        ],
+        labels: {
+            style: {
+                colors: "#000",
+                fontSize: '12px'
+            }
+        }
+    },
+    toolbar: {
+        show: false,
+    },
 
-const options = {
-  responsive: true,
-  height:400,
-  maintainAspectRatio: true
-};
+});
+
 
 
 
@@ -39,17 +73,22 @@ const options = {
                 </div>
                 <div class="col-lg-6 d-flex align-items-center">
                     <div class="content" data-aos="fade-up" data-aos-delay="50">
-                        <slot name="header"></slot>
-                        <p>Hello, I am a professional Frontend developer with an overall 4+ years of experience also, an expert in HTML5, CSS3, JavaScript, jQuery, Vue JS, Bootstrap, Re-design, HTML & CSS bug fixes, PSD to HTML, Figma to HTML and landing page design with SEO friendly, mobile responsive and pixel-perfect conversion.</p>
+                        <div class="profile">
+                            <img class="img-fluid" src="/img/Mehedi-Hasan.jpg" alt="Mehedi Hasan, Frentend developer" loading="lazy">
+                            <p><i class="bi bi-envelope-fill"></i> Email: mehedihtml@gmail.com</p>
+                            <p><i class="bi bi-skype"></i> Skype: mehedihasancmt2</p>
+                        </div>
+
+                        <p>Hello, I am a professional Frontend developer with an overall 5+ years of experience also, an expert in HTML5, CSS3, JavaScript, jQuery, Vue JS, Element Plus, Bootstrap 5, Re-design, HTML & CSS bug fixes, PSD to HTML, Figma to HTML and landing page design with SEO friendly, mobile responsive and pixel-perfect conversion.</p>
                         <p> Web design is my hobby and passion. if you have any kind of work related to my skills then please contact me. Have a good day.</p>
-                        <slot name="button">
-                            
-                        </slot>
+                        <a class="cus-btn" href="/pdf/Mehedi_Hsana _Resume.pdf" target="_blank">See Resume</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="content"  data-aos="fade-up" data-aos-delay="100">
-                        <Bar :data="data" :options="options" />
+                        <div id="chart">
+                            <apexchart type="bar" height="400" :options="chartOptions" :series="series"></apexchart>
+                        </div>
                     </div>
                 </div>
             </div>

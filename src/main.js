@@ -4,6 +4,8 @@ import router from './router'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import VueApexCharts from "vue3-apexcharts";
+
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -18,4 +20,8 @@ AOS.init({
     once: true
 });
 
-createApp(App).use(router).mount('#app')
+
+const app = createApp(App)
+app.use(VueApexCharts)
+app.use(router)
+app.mount('#app')

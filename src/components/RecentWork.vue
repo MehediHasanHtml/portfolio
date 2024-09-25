@@ -41,43 +41,49 @@ const works = ref([
     {
         id: 7,
         img: '/img/zeew.png',
-        link: 'https://experthtml.github.io/zeew.github.io/',
+        link: 'https://MehediHasanHtml.github.io/zeew.github.io/',
         category: 'psdhtml'
     },
     {
         id: 8,
         img: '/img/ga.png',
-        link: 'https://experthtml.github.io/gallery.github.io/',
+        link: 'https://MehediHasanHtml.github.io/gallery.github.io/',
         category: 'psdhtml'
     },
     {
         id: 9,
         img: '/img/homeal.png',
-        link: 'https://experthtml.github.io/perfect.github.io/',
+        link: 'https://MehediHasanHtml.github.io/perfect.github.io/',
         category: 'psdhtml'
     },
     {
         id: 10,
         img: '/img/saderv.png',
-        link: 'https://experthtml.github.io/saderv.github.io/',
+        link: 'https://MehediHasanHtml.github.io/saderv.github.io/',
         category: 'psdhtml'
     },
     {
         id: 11,
         img: '/img/future.png',
-        link: 'https://experthtml.github.io/future.github.io/',
+        link: 'https://MehediHasanHtml.github.io/future.github.io/',
         category: 'psdhtml'
     },
     {
         id: 12,
         img: '/img/lotus.png',
-        link: 'https://experthtml.github.io/lotus.github.io/',
+        link: 'https://MehediHasanHtml.github.io/lotus.github.io/',
         category: 'psdhtml'
     },
     {
         id: 13,
         img: '/img/personal.png',
         link: 'https://mehedihtml.com/',
+        category: 'vuejs'
+    },
+    {
+        id: 14,
+        img: '/img/mhshop.png',
+        link: 'https://vue.mehedihtml.com/',
         category: 'vuejs'
     },
 
@@ -129,23 +135,32 @@ const works = ref([
 
 
 <style scoped>
+
+
 .home-work {
     padding: 80px 0;
 }
 .work {
     padding: 15px;
     margin-bottom: 35px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     border-radius: 10px;
 }
 .work img {
     height: 230px;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }
 .work:hover {
-    box-shadow: var(--bs-box-shadow)!important;
+    -webkit-box-shadow: var(--bs-box-shadow)!important;
+            box-shadow: var(--bs-box-shadow)!important;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
@@ -193,6 +208,5 @@ const works = ref([
 }
 
 }
-
 
 </style>

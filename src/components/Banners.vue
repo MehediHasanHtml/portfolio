@@ -23,11 +23,16 @@ defineProps({
 
 <style scoped>
 
+
 .banners-area {
     height: 300px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
     z-index: 2;
 }
@@ -51,7 +56,8 @@ defineProps({
     font-weight: 600;
     line-height: 1.3;
     color: #fff;
-    filter: contrast(1);
+    -webkit-filter: contrast(1);
+            filter: contrast(1);
 }
 
 .about {

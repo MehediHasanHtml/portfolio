@@ -19,26 +19,21 @@ const services = ref( [
         img: "/img/psd-to-responsive-website-usign-bootstrap.jpg",
         link: "https://www.fiverr.com/share/5bZqo4"
     },
+
     {
         id:4,
-        servicesName: "do html responsive mailchimp email template",
-        img: "/img/do-html-responsive-mailchimp-email-template.png",
-        link: "https://www.fiverr.com/share/mz9Zmb"
-    },
-    {
-        id:5,
         servicesName: "do html css bug fixing, responsive issue",
         img: "/img/html-css-bug fixing-responsive-issue.png",
         link: "https://www.fiverr.com/share/0EqVkr"
     },
     {
-        id:6,
+        id:5,
         servicesName: "create responsive landing page design",
         img: "/img/responsive-landing-page-design.jpg",
         link: "https://www.fiverr.com/share/XXzwgV"
     },
     {
-        id:7,
+        id:6,
         servicesName: "I will be your frontend developer with figma to HTML, vue js, bootstrap",
         img: "/img/frontend-developer-figma-to-vue-js.png",
         link: "https://www.fiverr.com/s/o2VDgx"
@@ -87,8 +82,10 @@ const services = ref( [
 .services img {
     height: 300px;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -138,7 +135,6 @@ const services = ref( [
 }
 
 }
-
 
 
 

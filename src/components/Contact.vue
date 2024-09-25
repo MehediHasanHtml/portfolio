@@ -1,4 +1,44 @@
 <script setup>
+import { ref } from "vue";
+
+const WEB3FORMS_ACCESS_KEY = "7bdd9c04-fb32-4fdf-a3a4-add54cc2ebce";
+const firstname = ref("")
+const lastname = ref("")
+const email = ref("")
+const phone = ref("")
+const message = ref("")
+const successmsg = ref("")
+
+const submitForm = async () => {
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({
+      access_key: WEB3FORMS_ACCESS_KEY,
+      firstname: firstname.value,
+      lastname: lastname.value,
+      email: email.value,
+      phone: phone.value,
+      message: message.value,
+    }),
+  });
+
+  const result = await response.json();
+  if (result.success) {
+    successmsg.value = result.message
+    firstname.value = ""
+    lastname.value = ""
+    email.value = ""
+    phone.value = ""
+    message.value = ""
+  }
+
+};
+
+
 
 </script>
 
@@ -18,40 +58,41 @@
                     <slot name="contactinfo">
 
                     </slot>
-                    <form action="">
+                    <form @submit.prevent="submitForm()">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="firstname" placeholder="First name">
+                                    <input type="text" class="form-control" id="firstname" placeholder="First name" name="firstname" v-model="firstname" required>
                                     <label for="firstname">First name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Last name" name="lastname" v-model="lastname" required>
                                     <label for="lastname">Last name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" v-model="email" required>
                                     <label for="floatingInput">Email address</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating mb-3">
-                                    <input type="number" class="form-control" id="phone" placeholder="Phone number">
+                                    <input type="number" class="form-control" id="phone" placeholder="Phone number" name="phone" v-model="phone">
                                     <label for="phone">Phone number</label>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2" style="height: 100px" name="message" v-model="message" required></textarea>
                                     <label for="floatingTextarea2">Message</label>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <button type="submit" class="submit">Send</button>
+                                <p class="succes">{{ successmsg }}</p>
                             </div>
                         </div>
                     </form>
@@ -64,6 +105,7 @@
 </template>
 
 <style scoped>
+
 .contact-area {
     background: #f4f4f4;
 }
@@ -89,7 +131,8 @@ iframe {
 .form-control:focus {
     border-color: #293042;
     outline: 0;
-    box-shadow: inherit;
+    -webkit-box-shadow: inherit;
+            box-shadow: inherit;
 }
 .submit {
     border: none;
@@ -102,14 +145,28 @@ iframe {
     font-weight: 500;
     background: #68d388;
     margin-right: 15px;
-    border-radius: 30px;
+    border-radius: 8px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
 .submit:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     color: #fff;
     background: #293042 !important;
+}
+
+p.succes {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 

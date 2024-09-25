@@ -81,6 +81,7 @@ const faqs = ref([
 </template>
 
 <style scoped>
+
 .faq-area {
     padding: 80px 0;
     background: #f4f4f4;
@@ -89,7 +90,8 @@ const faqs = ref([
     z-index: 3;
     border-color: inherit;
     outline: 0;
-    box-shadow: inherit;
+    -webkit-box-shadow: inherit;
+            box-shadow: inherit;
 }
 .accordion-button {
     font-size: 18px;

@@ -59,6 +59,18 @@ const reviews =ref([
         img: '/img/nataliamorel6.jpg',
         text: "Fast response. Great communication. It was great work and very fast. I would go to him if I have a quick design and if I end up have a bigger need in designing a website I will also come to him. Thank you so much this was great and faster than expected."
     },
+    {
+        id: 10,
+        name: 'lizkodela',
+        img: '/img/missing.jpg',
+        text: "Top professional, polite, and very fast."
+    },
+    {
+        id: 11,
+        name: 'lizkodela',
+        img: '/img/missing.jpg',
+        text: "Always a pleasure working with Mehedi, a real pro, polite, and good work ethics. I highly recommend him."
+    },
 
 ]);
 
@@ -116,14 +128,17 @@ const settings = ({
 
 <style>
 
+
 .testimonials {
     padding: 80px 0;
 }
 .testmoni img {
     height: 100px;
     width: 100px;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
     border-radius: 50%;
     margin-bottom: 5px;
 }
@@ -169,6 +184,5 @@ const settings = ({
 
 
 }
-
 
 </style>

@@ -160,6 +160,7 @@ const trainings = ref([
 
 
 <style scoped>
+
 .title h2 {
     font-size: 30px;
     line-height: 1;
