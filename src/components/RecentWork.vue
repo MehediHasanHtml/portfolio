@@ -165,8 +165,8 @@ const works = ref([
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #293042;
-    background-color: #68d388;
+    color: #fff;
+    background-color: #ff5252;
     border-color: none;
 }
 
@@ -174,7 +174,7 @@ const works = ref([
     display: block;
     font-size:18px;
     font-weight: 500;
-    color: #293042;
+    color: #222;
     text-decoration: none;
     background: 0 0;
     border: 0;
@@ -185,11 +185,11 @@ const works = ref([
 }
 
 .nav-link:focus, .nav-link:hover {
-    color: #293042;
+    color: #222;
 }
 
 .nav-tabs {
-    border-bottom: 1px solid #68d388;
+    border-bottom: 1px solid #ff5252;
 }
 .tab-pane{
     padding: 15px 0;

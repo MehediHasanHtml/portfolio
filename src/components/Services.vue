@@ -34,9 +34,9 @@ const services = ref( [
     },
     {
         id:6,
-        servicesName: "I will be your frontend developer with figma to HTML, vue js, bootstrap",
-        img: "/img/frontend-developer-figma-to-vue-js.png",
-        link: "https://www.fiverr.com/s/o2VDgx"
+        servicesName: "I will be your frontend developer with figma to HTML, vue js, element plus",
+        img: "/img/frontend-developer-figma-to-vue-js.jpg",
+        link: "https://www.fiverr.com/s/DB0ElLQ"
     },
 ]);
 
@@ -95,7 +95,7 @@ const services = ref( [
     padding: 10px 25px;
     line-height: 1.5;
     font-weight: 500;
-    color: #293042;
+    color: #222;
 }
 
 .services h2 a{
@@ -103,7 +103,7 @@ const services = ref( [
     font-size: 20px;
     line-height: 1.5;
     font-weight: 500;
-    color: #293042;
+    color: #222;
     min-height: 60px;
 }
 

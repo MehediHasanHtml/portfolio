@@ -23,7 +23,7 @@ const title = ref('About | Mehedi Hasan');
         </template>
 
         <template v-slot:button>
-            <a class="cus-btn" href="/pdf/Mehedi_Hsana _Resume.pdf" target="_blank">See Resume</a>
+            <a class="cus-btn" href="/pdf/Mehedi_Hsana_Resume.pdf" target="_blank">See Resume</a>
         </template>
         
     </HomeAbout>

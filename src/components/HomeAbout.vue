@@ -79,9 +79,9 @@ const series = ref( [{
                             <p><i class="bi bi-skype"></i> Skype: mehedihasancmt2</p>
                         </div>
 
-                        <p>Hello, I am a professional Frontend developer with an overall 5+ years of experience also, an expert in HTML5, CSS3, JavaScript, jQuery, Vue JS, Element Plus, Bootstrap 5, Re-design, HTML & CSS bug fixes, PSD to HTML, Figma to HTML and landing page design with SEO friendly, mobile responsive and pixel-perfect conversion.</p>
+                        <p>Hello, I am a professional Frontend developer with an overall 6+ years of experience also, an expert in HTML5, CSS3, JavaScript, jQuery, <b>Vue JS,</b> Element Plus, Bootstrap 5, Re-design, HTML & CSS bug fixes, PSD to HTML, Figma to HTML, <b>Admin Dashboard</b> and landing page design with SEO friendly, <b>mobile responsive</b>  and pixel-perfect conversion.</p>
                         <p> Web design is my hobby and passion. if you have any kind of work related to my skills then please contact me. Have a good day.</p>
-                        <a class="cus-btn" href="/pdf/Mehedi_Hsana _Resume.pdf" target="_blank">See Resume</a>
+                        <a class="cus-btn" href="/pdf/Mehedi_Hsana_Resume.pdf" target="_blank">See Resume</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -107,7 +107,7 @@ const series = ref( [{
 .content p {
     font-size: 18px;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
@@ -119,7 +119,7 @@ const series = ref( [{
 
     .content p {
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 400;
     }
 
 }

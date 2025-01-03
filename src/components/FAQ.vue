@@ -96,15 +96,19 @@ const faqs = ref([
 .accordion-button {
     font-size: 18px;
     font-weight: 500;
-    color: #293042;
+    color: #222;
 }
 
 .accordion-body p {
     font-size: 16px;
     color: #36344D;
 }
+
+
 .accordion-button:not(.collapsed) {
+    color: #36344D;
     background-color: transparent;
+    box-shadow:inherit;
 }
 
 
@@ -113,7 +117,7 @@ const faqs = ref([
 .accordion-button {
     font-size: 16px;
     font-weight: 500;
-    color: #293042;
+    color: #222;
 }
 
 

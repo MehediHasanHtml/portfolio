@@ -107,7 +107,7 @@ const submitForm = async () => {
 <style scoped>
 
 .contact-area {
-    background: #f4f4f4;
+    background: #fff;
 }
 .map {
     height: 100%;
@@ -129,7 +129,7 @@ iframe {
     margin-bottom: 25px;
 }
 .form-control:focus {
-    border-color: #293042;
+    border-color: #222;
     outline: 0;
     -webkit-box-shadow: inherit;
             box-shadow: inherit;
@@ -140,10 +140,10 @@ iframe {
     display: block;
     padding: 12px 35px;
     font-size: 18px;
-    color: #293042;
+    color: #fff;
     line-height: 1.5;
     font-weight: 500;
-    background: #68d388;
+    background: #ff5252;
     margin-right: 15px;
     border-radius: 8px;
     -webkit-transition: all 0.3s ease;
@@ -156,7 +156,7 @@ iframe {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     color: #fff;
-    background: #293042 !important;
+    background: #222 !important;
 }
 
 p.succes {

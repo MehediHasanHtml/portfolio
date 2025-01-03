@@ -4,7 +4,7 @@ import { Carousel, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
 const title = 'Frontend Developer'
-const subtitle = "Hello, If you're looking for a frontend developer to convert PSD to HTML, Figma to HTML, Figma to Vue js and landing page design With SEO friendly and pixel-perfect using Vue js, Element Plus, Bootstrap 5 then this is exactly what I specialize in. Talk about a perfect match. 👇"
+
 
 const sliders = ref([
     {
@@ -43,11 +43,11 @@ const sliders = ref([
                     <div class="col-lg-6">
                         <div class="hero-content" >
                             <h1  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">{{ title }}</h1>
-                            <p  data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">{{ subtitle }}</p>
+                            <p  data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Hello, If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b>Admin Dashboard</b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Element Plus, Bootstrap 5 then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
                             <img class="img-fluid my-3" src="/img/techlogy.png" alt="techlogy" loading="lazy"  data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
                             <div class="btns"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                                 <router-link to="/portfolio">Portfolio</router-link>
-                                <router-link to="/services"> Services</router-link>
+                                <a class="cus-btn" href="/pdf/Mehedi_Hsana_Resume.pdf" target="_blank">See Resume</a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@ const sliders = ref([
     background: rgba(41, 48, 66, 0.8);
 }
 .carousel__item img {
-    height: calc(100vh - 82px);
+    height: calc(100vh - 75px);
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
@@ -97,7 +97,7 @@ const sliders = ref([
     top: 50%;
     left: 50%;
     z-index: 2;
-    max-width: 900px;
+    max-width: 930px;
     width: 90%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -119,7 +119,7 @@ const sliders = ref([
     font-size: 18px;
     color: #fff;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 15px;
     -webkit-filter: contrast(1);
             filter: contrast(1);
@@ -142,10 +142,10 @@ const sliders = ref([
     display: inline-block;
     padding: 12px 35px;
     font-size: 18px;
-    color: #293042;
+    color: #fff;
     line-height: 1.5;
     font-weight: 500;
-    background: #68d388;
+    background: #ff5252;
     margin-right: 15px;
     border-radius: 30px;
     -webkit-transition: all 0.3s ease;
@@ -158,10 +158,10 @@ const sliders = ref([
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    background: #68d388 !important;
+    background: #222 !important;
 }
 .btns a:last-child{
-    background: #fff;
+    background: #222;
 }
 
 

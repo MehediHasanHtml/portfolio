@@ -144,7 +144,7 @@ const settings = ({
 }
 .testmoni h4 {
     font-size: 18px;
-    color: #293042;
+    color: #222;
     font-weight: 600;
     line-height: 1.3;
     margin-bottom: 15px;
@@ -160,14 +160,14 @@ const settings = ({
 .carousel__prev {
     height: 40px;
     width: 40px;
-    background: #293042;
+    background: #ff5252;
     color: #fff !important;
     border-radius: 50%;
 }
 .carousel__next {
     height: 40px;
     width: 40px;
-    background: #293042;
+    background: #ff5252;
     color: #fff !important;
     border-radius: 50%;
 }
@@ -182,6 +182,22 @@ const settings = ({
     display: none;
 }
 
+.carousel__pagination-button::after {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+}
+.carousel__pagination-button.carousel__pagination-button--active::after {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ff5252;
+}
 
 }
 

@@ -11,7 +11,7 @@
             <div class="col-12">
                 <nav class="navbar navbar-expand-xl">
                     <div class="container-fluid p-0">
-                        <router-link class="navbar-brand" to="/">Mehedi Hasan</router-link>
+                        <router-link class="navbar-brand" to="/"><img class="img-fluid" src="/img/logo.png" alt="Logo"></router-link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewbox="0 0 30 27">
@@ -84,20 +84,19 @@
     z-index: 99;
     background: #fff;
 }
-.navbar-brand {
-    font-size: 24px;
-    font-weight: 600;
-    color: #36344D;
+
+.navbar-brand img {
+    height: 30px;
 }
 .nav-link {
     font-size: 16px;
-    color: #36344D;
+    color: #222;
     font-weight: 500;
     -webkit-filter: contrast(1);
             filter: contrast(1);
 }
 .router-link-exact-active.nav-link {
-    color: #68d388 !important;
+    color: #ff5252 !important;
     -webkit-filter: contrast(1);
             filter: contrast(1);
 }
@@ -113,7 +112,7 @@
 .accunt li a{
     display: inline-block;
     font-size: 20px;
-    color: #36344D;
+    color: #222;
     font-weight: 500;
     margin-left: 8px;
     -webkit-filter: contrast(1);
@@ -137,6 +136,12 @@
             box-shadow: inherit;
 }
 
+
+}
+@media (max-width: 767px) {
+    .navbar-brand img {
+        height: 26px;
+    }
 
 }
 

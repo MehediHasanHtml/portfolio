@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4 footerrow">
                     <div class="footers-grid"  data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                        <h3>Mehedi Hasan</h3>
+                        <img class="img-fluid flogo" src="/img/fo-logo.png" alt="logo">
                         <p><i class="bi bi-envelope-fill"></i> Email: mehedihtml@gmail.com</p>
                         <p><i class="bi bi-skype"></i> Skype: mehedihasancmt2</p>
                     </div>
@@ -42,7 +42,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="copy">
-                        <p>&copy; 2024 All Right Reserved. Design By Mehedi Hasan</p>
+                        <p>&copy; 2025 All Right Reserved. Design By Mehedi Hasan</p>
                     </div>
                 </div>
             </div>
@@ -56,13 +56,18 @@
 
 .footer-area {
     padding: 50px 0 0 0;
-    background: #68d388;
+    background: #1d1d1d;
 }
 .footers-grid {
     margin-bottom: 25px;
 }
+.flogo {
+    height: 30px;
+    margin-bottom: 25px;
+}
 
 .footers-grid h3 {
+    color: #fff;
     font-size: 24px;
     line-height: 1.5;
     font-weight: 600;
@@ -73,13 +78,13 @@
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 5px;
-    color: #293042;
+    color: #fff;
 }
 .footers-grid p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 8px;
-    color: #293042;
+    color: #fff;
 }
 .social li {
     display: inline-block;
@@ -92,12 +97,12 @@
 .copy {
     padding: 20px;
     text-align: center;
-    border-top: 1px solid #293042;
+    border-top: 1px solid #ccc;
 }
 .copy p {
     font-size: 16px;
     line-height: 1.5;
-    color: #293042;
+    color: #fff;
 }
 .footerrow {
     display: -webkit-box;
