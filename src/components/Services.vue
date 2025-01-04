@@ -91,7 +91,7 @@ const services = ref( [
 }
 
 .services h2 {
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 25px;
     line-height: 1.5;
     font-weight: 500;
@@ -100,7 +100,7 @@ const services = ref( [
 
 .services h2 a{
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
     font-weight: 500;
     color: #222;

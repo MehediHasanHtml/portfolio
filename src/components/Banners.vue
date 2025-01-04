@@ -35,6 +35,7 @@ defineProps({
             align-items: center;
     position: relative;
     z-index: 2;
+    margin-top: 76px;
 }
 .banners-area::after{
     display: block;
@@ -45,7 +46,7 @@ defineProps({
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(41, 48, 66, 0.8);
+    background: rgba(0, 0, 0, 0.7);
     z-index: -1;
 }
 .banners {
@@ -131,6 +132,7 @@ defineProps({
 @media (max-width: 767.98px) {
 .banners-area {
     height: 160px;
+    margin-top: 72px;
 }
 
 .banners h1 {

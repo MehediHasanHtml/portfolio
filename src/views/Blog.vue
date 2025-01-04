@@ -3,6 +3,8 @@ import {ref, onBeforeMount, reactive} from 'vue'
 const title = ref('Blog | Mehedi Hasan');
 import Banners from '../components/Banners.vue';
 import Blogs from '../store/store.json';
+import Header from '../components/Header.vue';
+import Footer from '../components/Footer.vue';
 
 
 // const posts = ref([])
@@ -20,6 +22,8 @@ import Blogs from '../store/store.json';
 </script>
 
 <template>
+
+<Header class="shadows" />
 <title>{{ title }}</title>
 <Banners class="blog" banners="Blog" />
 
@@ -42,6 +46,7 @@ import Blogs from '../store/store.json';
 </section>
 <!-- blog-area -->
 
+<Footer/>
 </template>
 
 <style>

@@ -3,10 +3,15 @@ import {ref} from 'vue'
 const title =ref('Contact | Mehedi Hasan')
 import Banners from '../components/Banners.vue';
 import ContactVue from '../components/Contact.vue';
+import Header from '../components/Header.vue';
+import Footer from '../components/Footer.vue';
 
 </script>
 
 <template>
+<Header class="shadows" />
+
+
 <title>{{ title }}</title>
 <Banners class="contact" banners="Contact"/>
 <ContactVue>
@@ -19,7 +24,7 @@ import ContactVue from '../components/Contact.vue';
 </ContactVue>
 
 
-
+<Footer/>
 </template>
 
 <style scoped>
@@ -29,6 +34,7 @@ import ContactVue from '../components/Contact.vue';
 .info p{
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 5px;
 }
 
 </style>

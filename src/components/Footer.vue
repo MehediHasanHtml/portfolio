@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-6 col-lg-4 footerrow">
                     <div class="footers-grid"  data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                        <img class="img-fluid flogo" src="/img/fo-logo.png" alt="logo">
+                        <img class="img-fluid flogo" src="/img/logo-white.png" alt="logo">
                         <p><i class="bi bi-envelope-fill"></i> Email: mehedihtml@gmail.com</p>
                         <p><i class="bi bi-skype"></i> Skype: mehedihasancmt2</p>
                     </div>

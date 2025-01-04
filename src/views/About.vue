@@ -1,8 +1,10 @@
 <script setup>
 import {ref} from 'vue';
+import Header from '../components/Header.vue'
 import HomeAbout from '../components/HomeAbout.vue';
 import Education from '../components/Education.vue';
 import Banners from '../components/Banners.vue';
+import Footer from '../components/Footer.vue';
 const title = ref('About | Mehedi Hasan');
 
 
@@ -11,6 +13,9 @@ const title = ref('About | Mehedi Hasan');
 <template>
     
     <title>{{ title }}</title>
+    
+    <Header class="shadows" />
+
     <Banners class="about" banners="About"></Banners>
 
     <HomeAbout>
@@ -29,6 +34,9 @@ const title = ref('About | Mehedi Hasan');
     </HomeAbout>
 
     <Education/>
+
+
+    <Footer />
 
 </template>
 

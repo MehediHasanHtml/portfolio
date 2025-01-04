@@ -172,16 +172,6 @@ const settings = ({
     border-radius: 50%;
 }
 
-
-@media (max-width: 767.98px) {
-
-.carousel__prev {
-    display: none;
-}
-.carousel__next {
-    display: none;
-}
-
 .carousel__pagination-button::after {
     display: block;
     content: '';
@@ -198,6 +188,18 @@ const settings = ({
     border-radius: 50%;
     background: #ff5252;
 }
+
+
+@media (max-width: 767.98px) {
+
+.carousel__prev {
+    display: none;
+}
+.carousel__next {
+    display: none;
+}
+
+
 
 }
 

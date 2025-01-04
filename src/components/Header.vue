@@ -1,40 +1,44 @@
 <script setup>
+import { ref, onBeforeMount } from "vue";
+
+onBeforeMount(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+const stickyHeader = ref(false)
+
+ function handleScroll(){
+  if (window.scrollY) {
+    stickyHeader.value = true
+  } else {
+    stickyHeader.value = false
+  }
+}
 
 </script>
 
 <template>
 
 <!-- header-area -->
-<header class="header-area shadow-sm">
+<header class="header-area" :class="stickyHeader ? 'shadows' : ''">
     <div class="containers">
         <div class="row">
             <div class="col-12">
                 <nav class="navbar navbar-expand-xl">
                     <div class="container-fluid p-0">
-                        <router-link class="navbar-brand" to="/"><img class="img-fluid" src="/img/logo.png" alt="Logo"></router-link>
+                        <router-link class="navbar-brand" to="/">
+                            <img class="img-fluid lwhite" src="/img/logo-white.png" alt="Logo">
+                            <img class="img-fluid lblack" src="/img/logo-black.png" alt="Logo">
+                        </router-link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="27" viewbox="0 0 30 27">
-                                <g fill="none" fill-rule="evenodd">
-                                    <g fill="#36344D" style="fill: #36344D;">
-                                        <g>
-                                            <path d="M0 17H30V19H0zM0 25H30V27H0z"
-                                                transform="translate(-1376 -48) translate(1376 48)" />
-                                            <text font-family="Poppins" sans-serif font-size="10" font-weight="500"
-                                                letter-spacing=".2"
-                                                transform="translate(-1376 -48) translate(1376 48)">
-                                                <tspan x=".115" y="10">MENU</tspan>
-                                            </text>
-                                        </g>
-                                    </g>
-                                </g>
-                            </svg>
+                            <i class="bi bi-text-right"></i>
                         </span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <router-link class="nav-link active" to="/">Home</router-link>
+                                    <router-link class="nav-link" to="/">Home</router-link>
                                 </li>
                                 <li class="nav-item">
                                     <router-link class="nav-link" to="/about">About</router-link>
@@ -82,7 +86,29 @@
     left: 0;
     width: 100%;
     z-index: 99;
+    background: transparent;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.header-area.shadows {
     background: #fff;
+    box-shadow: var(--bs-box-shadow-sm) !important;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.lblack {
+    display: none;
+}
+
+.shadows .lblack {
+    display: block;
+}
+.shadows .lwhite {
+    display: none;
 }
 
 .navbar-brand img {
@@ -90,15 +116,27 @@
 }
 .nav-link {
     font-size: 16px;
-    color: #222;
+    color: #fff;
     font-weight: 500;
     -webkit-filter: contrast(1);
             filter: contrast(1);
+}
+.shadows .nav-link {
+    color: #222;
 }
 .router-link-exact-active.nav-link {
     color: #ff5252 !important;
     -webkit-filter: contrast(1);
             filter: contrast(1);
+}
+
+.shadows .nav-link:focus, 
+.shadows .nav-link:hover {
+    color: #222;
+}
+.nav-link:focus, 
+.nav-link:hover {
+    color: #fff;
 }
 
 .me-auto {
@@ -109,18 +147,36 @@
 .accunt li {
     display: inline-block;
 }
-.accunt li a{
+.accunt li a {
     display: inline-block;
     font-size: 20px;
-    color: #222;
+    color: #fff;
     font-weight: 500;
-    margin-left: 8px;
+    margin-left: 10px;
     -webkit-filter: contrast(1);
             filter: contrast(1);
 }
+.shadows .accunt li a {
+    color: #222;
+}
 .navbar-toggler-icon {
     background-image: none;
+    width: auto;
+    height: auto;
 }
+
+.navbar-toggler {
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+.shadows .navbar-toggler {
+    color: #222;
+}
+
 
 
 @media (max-width: 1199.98px) {
@@ -134,6 +190,16 @@
     outline: 0;
     -webkit-box-shadow: inherit;
             box-shadow: inherit;
+}
+
+.navbar-collapse {
+    background: #111;
+    padding: 8px;
+}
+
+.shadows .navbar-collapse {
+    background: #fff;
+    padding: 8px;
 }
 
 

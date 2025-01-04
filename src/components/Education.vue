@@ -188,7 +188,7 @@ const trainings = ref([
     left: -7px;
     height: 12px;
     width: 12px;
-    background: #222;
+    background: #ff5252;
     border-radius: 50%;
 }
 .educations h3 {
@@ -206,7 +206,7 @@ const trainings = ref([
 
 .educations ul {
     position: relative;
-    border-left: 2px solid #222;
+    border-left: 2px solid #ff5252;
 }
 
 strong {

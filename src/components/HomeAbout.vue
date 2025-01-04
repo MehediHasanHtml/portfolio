@@ -105,7 +105,7 @@ const series = ref( [{
 }
 
 .content p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
     margin-bottom: 15px;

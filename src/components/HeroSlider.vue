@@ -1,28 +1,10 @@
 <script setup>
 import {reactive, ref} from 'vue'
-import { Carousel, Slide } from 'vue3-carousel'
-import 'vue3-carousel/dist/carousel.css'
 
-const title = 'Frontend Developer'
+const title = 'Frontend Developer';
 
 
-const sliders = ref([
-    {
-        id: 1,
-        img: '/img/slider1.jpg',
-        alt: 'vue js developer, mehedi hasan'
-    },
-    {
-        id: 2,
-        img: '/img/slider2.jpg',
-        alt: 'responsive designer, mehedi hasan'
-    },
-    {
-        id: 3,
-        img: '/img/slider3.jpg',
-        alt: 'frontend developer, mehedi hasan'
-    },
-]);
+
 
 
 </script>
@@ -35,17 +17,16 @@ const sliders = ref([
         <div class="row">
             <div class="col-12 p-0">
                 <div class="sliders">
-                    <Carousel  :autoplay="5000" :wrap-around="true" :transition="500">
-                        <Slide v-for="slider in sliders" :key="slider.id">
-                            <div class="carousel__item"><img class="img-fluid" :src="slider.img" :alt="slider.alt" loading="lazy"></div>
-                        </Slide>
-                    </Carousel>
+                    
+                    <div class="videos">
+                        <video src="/img/mehedi.mp4" type="video/webm" autoplay muted loop playsinline id="background"></video>
+                    </div>
                     <div class="col-lg-6">
                         <div class="hero-content" >
-                            <h1  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">{{ title }}</h1>
-                            <p  data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Hello, If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b>Admin Dashboard</b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Element Plus, Bootstrap 5 then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
-                            <img class="img-fluid my-3" src="/img/techlogy.png" alt="techlogy" loading="lazy"  data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">
-                            <div class="btns"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                            <h1  data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">{{ title }}</h1>
+                            <p  data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Hello, If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b>Admin Dashboard</b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Element Plus, Bootstrap 5 then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
+                            <img class="img-fluid my-3" src="/img/techlogy.png" alt="techlogy" loading="lazy"  data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
+                            <div class="btns"  data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
                                 <router-link to="/portfolio">Portfolio</router-link>
                                 <a class="cus-btn" href="/pdf/Mehedi_Hsana_Resume.pdf" target="_blank">See Resume</a>
                             </div>
@@ -75,7 +56,7 @@ const sliders = ref([
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(41, 48, 66, 0.8);
+    background: rgba(0, 0, 0, 0.4);
 }
 .carousel__item img {
     height: calc(100vh - 75px);
@@ -85,8 +66,21 @@ const sliders = ref([
     -o-object-position: top;
        object-position: top;
 }
-.carousel__slide {
+.videos {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#background {
+    -o-object-fit: cover;
+    object-fit: cover;
     display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
 }
 .sliders {
     position: relative;
@@ -106,7 +100,7 @@ const sliders = ref([
 }
 
 .hero-content h1 {
-    font-size: 60px;
+    font-size: 55px;
     color: #fff;
     line-height: 1.3;
     font-weight: 600;
@@ -116,7 +110,7 @@ const sliders = ref([
 }
 
 .hero-content p {
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     line-height: 1.5;
     font-weight: 400;
@@ -141,7 +135,7 @@ const sliders = ref([
 .btns a {
     display: inline-block;
     padding: 12px 35px;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     line-height: 1.5;
     font-weight: 500;
@@ -219,7 +213,7 @@ const sliders = ref([
     margin-bottom: 15px;
 }
 .hero-slider::after {
-    background: rgba(41, 48, 66, 0.9);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 }
