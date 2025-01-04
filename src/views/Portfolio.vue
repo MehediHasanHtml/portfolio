@@ -27,11 +27,12 @@ const title = ref('Portfolio | Mehedi Hasan');
 
 <style scoped>
 .notes {
+      padding: 10px 15px;
       text-align: center;
       margin-top: 25px;
 }
 .notes p {
-      font-weight: 600;
+      font-weight: 700;
       font-size: 16px;
 }
 </style>

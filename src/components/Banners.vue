@@ -120,6 +120,7 @@ defineProps({
 @media (max-width: 1199.98px) {
 .banners-area {
     height: 200px;
+    margin-top: 56px;
 }
 
 .notfound {
@@ -132,7 +133,7 @@ defineProps({
 @media (max-width: 767.98px) {
 .banners-area {
     height: 160px;
-    margin-top: 72px;
+    margin-top: 52px;
 }
 
 .banners h1 {

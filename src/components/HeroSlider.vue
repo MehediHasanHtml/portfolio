@@ -23,12 +23,14 @@ const title = 'Frontend Developer';
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-content" >
-                            <h1  data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">{{ title }}</h1>
-                            <p  data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Hello, If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b>Admin Dashboard</b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Element Plus, Bootstrap 5 then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
-                            <img class="img-fluid my-3" src="/img/techlogy.png" alt="techlogy" loading="lazy"  data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
-                            <div class="btns"  data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
-                                <router-link to="/portfolio">Portfolio</router-link>
-                                <a class="cus-btn" href="/pdf/Mehedi_Hsana_Resume.pdf" target="_blank">See Resume</a>
+                            <div class="headdign" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                                <h1 >{{ title }}</h1>
+                                <p>Hello, If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b>Admin Dashboard</b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Element Plus, Bootstrap 5 then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
+                                <img class="img-fluid my-3" src="/img/techlogy.png" alt="techlogy" loading="lazy" >
+                                <div class="btns">
+                                    <router-link to="/portfolio">Portfolio</router-link>
+                                    <a class="cus-btn" href="/pdf/Mehedi_Hsana_Resume.pdf" target="_blank">See Resume</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -58,14 +60,7 @@ const title = 'Frontend Developer';
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
 }
-.carousel__item img {
-    height: calc(100vh - 75px);
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: top;
-       object-position: top;
-}
+
 .videos {
     width: 100%;
     height: 100%;
@@ -177,9 +172,6 @@ const title = 'Frontend Developer';
     font-size: 16px;
 }
 
-.carousel__item img {
-    height: 640px;
-}
 
 .hero-content img {
     height: 50px;
@@ -218,13 +210,6 @@ const title = 'Frontend Developer';
 
 }
 
-@media (max-width: 575.98px) {
-.carousel__item img {
-    height: 630px;
-}
-
-
-}
 
 
 

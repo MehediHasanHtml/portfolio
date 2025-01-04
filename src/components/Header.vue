@@ -201,13 +201,16 @@ const stickyHeader = ref(false)
     background: #fff;
     padding: 8px;
 }
-
+.header-area {
+    padding: 0;
+}
 
 }
 @media (max-width: 767px) {
     .navbar-brand img {
         height: 26px;
     }
+
 
 }
 
