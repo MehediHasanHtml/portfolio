@@ -193,7 +193,7 @@ const trainings = ref([
 }
 .educations h3 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1;
     margin-bottom: 15px;
 }

@@ -26,7 +26,7 @@ const title = 'Frontend Developer';
                             <div class="headdign" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                                 <h1 >{{ title }}</h1>
                                 <p>Hello, If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b>Admin Dashboard</b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Element Plus, Bootstrap 5 then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
-                                <img class="img-fluid my-3" src="/img/techlogy.png" alt="techlogy" loading="lazy" >
+                                <img class="img-fluid my-3" src="/img/technology.png" alt="technology" loading="lazy" >
                                 <div class="btns">
                                     <router-link to="/portfolio">Portfolio</router-link>
                                     <a class="cus-btn" href="/pdf/Mehedi_Hsana_Resume.pdf" target="_blank">See Resume</a>
@@ -58,7 +58,7 @@ const title = 'Frontend Developer';
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .videos {
