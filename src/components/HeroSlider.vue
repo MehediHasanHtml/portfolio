@@ -98,7 +98,7 @@ const title = 'Frontend Developer';
     font-size: 55px;
     color: #fff;
     line-height: 1.3;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 15px;
     -webkit-filter: contrast(1);
             filter: contrast(1);

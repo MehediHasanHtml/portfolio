@@ -145,7 +145,7 @@ const settings = ({
 .testmoni h4 {
     font-size: 18px;
     color: #222;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 1.3;
     margin-bottom: 15px;
 }
