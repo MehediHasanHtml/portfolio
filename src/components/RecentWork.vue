@@ -4,84 +4,90 @@ import {ref} from 'vue'
 const works = ref([
     {
         id: 1,
+        img: '/img/mclgroupbd.png',
+        link: 'https://mclgroupbd.com/',
+        category: 'psdhtml'
+    },
+    {
+        id: 2,
         img: '/img/info.png',
         link: 'http://mehedihtml.com/infoxen/index.html',
         category: 'psdhtml'
     },
     {
-        id: 2,
+        id: 3,
         img: '/img/avedi.png',
         link: 'http://mehedihtml.com/avendi/index.html',
         category: 'psdhtml'
     },
     {
-        id: 3,
+        id: 4,
         img: '/img/danwilliams.png',
         link: 'http://mehedihtml.com/danwilliams/index.html',
         category: 'psdhtml'
     },
     {
-        id: 4,
+        id: 5,
         img: '/img/ladder.png',
         link: 'http://laddersaves.org/',
         category: 'psdhtml'
     },
     {
-        id: 5,
+        id: 6,
         img: '/img/p.png',
         link: 'https://www.propelor.com/',
         category: 'psdhtml'
     },
     {
-        id: 6,
+        id: 7,
         img: '/img/kl.png',
         link: 'https://www.kluitman.nl/',
         category: 'psdhtml'
     },
     {
-        id: 7,
+        id: 8,
         img: '/img/zeew.png',
         link: 'https://MehediHasanHtml.github.io/zeew.github.io/',
         category: 'psdhtml'
     },
     {
-        id: 8,
+        id: 9,
         img: '/img/ga.png',
         link: 'https://MehediHasanHtml.github.io/gallery.github.io/',
         category: 'psdhtml'
     },
     {
-        id: 9,
+        id: 10,
         img: '/img/homeal.png',
         link: 'https://MehediHasanHtml.github.io/perfect.github.io/',
         category: 'psdhtml'
     },
     {
-        id: 10,
+        id: 11,
         img: '/img/saderv.png',
         link: 'https://MehediHasanHtml.github.io/saderv.github.io/',
         category: 'psdhtml'
     },
     {
-        id: 11,
+        id: 12,
         img: '/img/future.png',
         link: 'https://MehediHasanHtml.github.io/future.github.io/',
         category: 'psdhtml'
     },
     {
-        id: 12,
+        id: 13,
         img: '/img/lotus.png',
         link: 'https://MehediHasanHtml.github.io/lotus.github.io/',
         category: 'psdhtml'
     },
     {
-        id: 13,
+        id: 14,
         img: '/img/personal.png',
         link: 'https://mehedihtml.com/',
         category: 'vuejs'
     },
     {
-        id: 14,
+        id: 15,
         img: '/img/mhshop.png',
         link: 'https://vue.mehedihtml.com/',
         category: 'vuejs'
@@ -139,9 +145,11 @@ const works = ref([
 
 .home-work {
     padding: 80px 0;
+    background: #161616;
 }
 .work {
     padding: 15px;
+    background: #282828;
     margin-bottom: 35px;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -167,14 +175,14 @@ const works = ref([
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     color: #fff;
     background-color: #ff5252;
-    border-color: none;
+    border-color: #ff5252;
 }
 
 .nav-link {
     display: block;
     font-size:18px;
     font-weight: 500;
-    color: #222;
+    color: #fff;
     text-decoration: none;
     background: 0 0;
     border: 0;
@@ -185,7 +193,7 @@ const works = ref([
 }
 
 .nav-link:focus, .nav-link:hover {
-    color: #222;
+    color: #fff;
 }
 
 .nav-tabs {

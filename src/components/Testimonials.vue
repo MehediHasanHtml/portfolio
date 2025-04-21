@@ -113,7 +113,6 @@ const settings = ({
                                 </div>
                             </Slide>
                             <template #addons>
-                                <Navigation />
                                 <Pagination />
                             </template>
                         </Carousel>
@@ -131,6 +130,7 @@ const settings = ({
 
 .testimonials {
     padding: 80px 0;
+    background-color: #161616;
 }
 .testmoni img {
     height: 100px;
@@ -144,14 +144,14 @@ const settings = ({
 }
 .testmoni h4 {
     font-size: 18px;
-    color: #222;
+    color: #fff;
     font-weight: 800;
     line-height: 1.3;
     margin-bottom: 15px;
 }
 
 .testmoni p {
-    color: #36344D;
+    color: #BFBFBF;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 15px;

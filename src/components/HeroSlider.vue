@@ -21,7 +21,7 @@ const title = 'Frontend Developer';
                     <div class="videos">
                         <video src="/img/mehedi.mp4" type="video/webm" autoplay muted loop playsinline id="background"></video>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-8">
                         <div class="hero-content" >
                             <div class="headdign" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                                 <h1 >{{ title }}</h1>
@@ -58,7 +58,7 @@ const title = 'Frontend Developer';
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .videos {
@@ -86,7 +86,7 @@ const title = 'Frontend Developer';
     top: 50%;
     left: 50%;
     z-index: 2;
-    max-width: 930px;
+    max-width: 990px;
     width: 90%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -95,13 +95,57 @@ const title = 'Frontend Developer';
 }
 
 .hero-content h1 {
-    font-size: 55px;
+    font-size: 75px;
     color: #fff;
     line-height: 1.3;
-    font-weight: 700;
     margin-bottom: 15px;
     -webkit-filter: contrast(1);
             filter: contrast(1);
+            position: relative;
+
+    background: -o-linear-gradient(135deg, #6355a4, red, #e89a3e, aqua);
+
+    background: linear-gradient(-45deg, #6355a4, red, #e89a3e, aqua);
+    background-size: 300%;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-animation: zee 6s linear infinite;
+            animation: zee 6s linear infinite;
+
+}
+
+
+@-webkit-keyframes zee {
+    0% {
+        background-position: 0px 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0px 50%;
+    }
+}
+
+
+@keyframes zee {
+    0% {
+        background-position: 0px 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0px 50%;
+    }
 }
 
 .hero-content p {
@@ -147,10 +191,11 @@ const title = 'Frontend Developer';
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    background: #222 !important;
+    background: #161616 !important;
 }
 .btns a:last-child{
-    background: #222;
+    background: #161616;
+    border: 1px solid #6355a4;
 }
 
 
@@ -205,7 +250,7 @@ const title = 'Frontend Developer';
     margin-bottom: 15px;
 }
 .hero-slider::after {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
 }
 
 }

@@ -33,7 +33,33 @@ const title = ref('404 page not found | Mehedi Hasan');
 <style scoped>
 .notfound-area {
     padding: 80px 0;
+    min-height: 60vh;
+    background: #161616;
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+    z-index: 2;
 }
+
+.notfound-area::after {
+    display: block;
+    content: '';
+    clear: both;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: radial-gradient(#434343  1px, transparent 0);
+    background-size: 16px 16px;
+    background-position: -19px -19px;
+    -webkit-mask-image: linear-gradient(237deg, black 0, transparent 100%);
+    mask-image: linear-gradient(237deg, black 0, transparent 100%);
+    position: absolute;
+    height: calc(100% - 16px);
+    width: 100%;
+    z-index: -1;
+}
+
 
 @media (max-width: 767.98px) {
 .title h2 {

@@ -28,7 +28,6 @@ const stickyHeader = ref(false)
                     <div class="container-fluid p-0">
                         <router-link class="navbar-brand" to="/">
                             <img class="img-fluid lwhite" src="/img/logo-white.png" alt="Logo">
-                            <img class="img-fluid lblack" src="/img/logo-black.png" alt="Logo">
                         </router-link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
@@ -93,23 +92,14 @@ const stickyHeader = ref(false)
 }
 
 .header-area.shadows {
-    background: #fff;
+    background: #161616;
     box-shadow: var(--bs-box-shadow-sm) !important;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
-.lblack {
-    display: none;
-}
 
-.shadows .lblack {
-    display: block;
-}
-.shadows .lwhite {
-    display: none;
-}
 
 .navbar-brand img {
     height: 30px;
@@ -122,7 +112,7 @@ const stickyHeader = ref(false)
             filter: contrast(1);
 }
 .shadows .nav-link {
-    color: #222;
+    color: #fff;
 }
 .router-link-exact-active.nav-link {
     color: #ff5252 !important;
@@ -132,7 +122,7 @@ const stickyHeader = ref(false)
 
 .shadows .nav-link:focus, 
 .shadows .nav-link:hover {
-    color: #222;
+    color: #fff;
 }
 .nav-link:focus, 
 .nav-link:hover {
@@ -157,7 +147,7 @@ const stickyHeader = ref(false)
             filter: contrast(1);
 }
 .shadows .accunt li a {
-    color: #222;
+    color: #fff;
 }
 .navbar-toggler-icon {
     background-image: none;
@@ -172,9 +162,10 @@ const stickyHeader = ref(false)
     background-color: transparent;
     border: none;
     border-radius: 0;
+    padding: 0;
 }
 .shadows .navbar-toggler {
-    color: #222;
+    color: #fff;
 }
 
 
@@ -198,7 +189,7 @@ const stickyHeader = ref(false)
 }
 
 .shadows .navbar-collapse {
-    background: #fff;
+    background: #161616;
     padding: 8px;
 }
 .header-area {

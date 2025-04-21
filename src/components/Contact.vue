@@ -46,15 +46,10 @@ const submitForm = async () => {
 <!-- contact-area -->
 <section class="contact-area">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 p-0">
-                <div class="map"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8682.057144089302!2d90.36762249401818!3d23.80595922866292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d6f6b8c2ff%3A0x3b138861ee9c8c30!2sMirpur%2010%20Roundabout%2C%20Dhaka%201216!5e0!3m2!1sen!2sbd!4v1697829175784!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+        <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="contacts"  data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
-                    <h3>Contact</h3>
+                    <h3>Contact Us</h3>
                     <slot name="contactinfo">
 
                     </slot>
@@ -107,8 +102,36 @@ const submitForm = async () => {
 <style scoped>
 
 .contact-area {
-    background: #fff;
+    background: #161616;
+    padding: 80px 0;
+    position: relative;
+    z-index: 2;
+
 }
+
+.contact-area::after {
+    display: block;
+    content: '';
+    clear: both;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: radial-gradient(#434343  1px, transparent 0);
+    background-size: 16px 16px;
+    background-position: -19px -19px;
+    -webkit-mask-image: linear-gradient(237deg, black 0, transparent 100%);
+    mask-image: linear-gradient(237deg, black 0, transparent 100%);
+    position: absolute;
+    height: calc(100% - 16px);
+    width: 100%;
+    z-index: -1;
+}
+
+.contacts {
+    background: #161616;
+}
+
+
 .map {
     height: 100%;
     width: 100%;
@@ -116,14 +139,18 @@ const submitForm = async () => {
 iframe {
     height: 100%;
     width: 100%;
+    filter: grayscale(1);
 }
 
 .contacts {
     padding: 30px;
+    background: #282828;
+    border-radius: 10px;
 }
 
 .contacts h3 {
     font-size: 30px;
+    color: #fff;
     line-height: 1.5;
     font-weight: 600;
     margin-bottom: 25px;
@@ -164,10 +191,179 @@ p.succes {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin: 15px;
+    color: #fff;
     text-align: center;
     font-size: 16px;
     font-weight: 600;
 }
+
+
+.form-floating>.form-control,
+.form-floating>.form-select {
+    height: 50px;
+    padding: 10px 15px;
+    min-height: auto;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #303132;
+    background-clip: padding-box;
+    border: 1px solid #303132;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 15px;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #303132;
+    background-clip: padding-box;
+    border: 1px solid #303132;
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border-radius: 10px;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-select:focus {
+    border-color: #303132;
+    outline: 0;
+    -webkit-box-shadow: inherit;
+    box-shadow: inherit;
+}
+
+.form-floating>label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    height: 22px;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.7;
+    padding: 0 5px;
+    pointer-events: none;
+    border: none;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+    -o-transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+    -webkit-transition: opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+
+.form-floating>.form-control:not(:-moz-placeholder-shown)~label {
+    opacity: 1;
+    color: #fff;
+    -webkit-transform: scale(0.85) translateY(-1.6rem) translateX(0.15rem);
+    -ms-transform: scale(0.85) translateY(-1.6rem) translateX(0.15rem);
+    transform: scale(0.85) translateY(-1.6rem) translateX(0.15rem);
+    background: linear-gradient( rgba(53, 53, 53, 0.2), rgba(48, 49, 50, 1));
+    font-size: 16px;
+}
+
+.form-floating>.form-control:not(:-ms-input-placeholder)~label {
+    opacity: 1;
+    color: #fff;
+    -webkit-transform: scale(0.85) translateY(-1.6rem) translateX(0.15rem);
+    -ms-transform: scale(0.85) translateY(-1.6rem) translateX(0.15rem);
+    transform: scale(0.85) translateY(-1.6rem) translateX(0.15rem);
+    background: linear-gradient( rgba(53, 53, 53, 0.2), rgba(48, 49, 50, 1));
+    font-size: 16px;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    opacity: 1;
+    color: #fff;
+    -webkit-transform: scale(0.85) translateY(-1.6rem) translateX(0.15rem);
+    -ms-transform: scale(0.85) translateY(-1.6rem) translateX(0.15rem);
+    transform: scale(0.85) translateY(-1.6rem) translateX(0.15rem);
+    background: -webkit-gradient( linear, left top, left bottom, from(rgba(53, 53, 53, 0.2)), to(rgba(48, 49, 50, 1)));
+    background: -o-linear-gradient( rgba(53, 53, 53, 0.2), rgba(48, 49, 50, 1));
+    background: linear-gradient( rgba(53, 53, 53, 0.2), rgba(48, 49, 50, 1));
+    font-size: 16px;
+}
+
+.form-floating>.form-control:not(:-moz-placeholder-shown) {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #303132;
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: #fff;
+}
+
+.form-floating>.form-control:not(:-ms-input-placeholder) {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #303132;
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: #fff;
+}
+
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown) {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #303132;
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: #fff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    box-shadow: 0 0 0 30px white inset !important;
+}
+
+.form-floating>.form-control-plaintext~label::after,
+.form-floating>.form-control:focus~label::after,
+.form-floating>.form-control:not(:placeholder-shown)~label::after,
+.form-floating>.form-select~label::after {
+    display: none;
+}
+
+textarea.form-control {
+    min-height: 100px;
+    padding-top: 15px !important;
+}
+
 
 
 

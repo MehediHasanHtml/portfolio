@@ -25,7 +25,7 @@ import Footer from '../components/Footer.vue';
 
 <Header class="shadows" />
 <title>{{ title }}</title>
-<Banners class="blog" banners="Blog" />
+<Banners class="blogdetails" banners="Blog" />
 
 <!-- blog-area -->
 <section class="blog-area">
@@ -52,6 +52,7 @@ import Footer from '../components/Footer.vue';
 <style>
 .blog-area {
     padding: 80px 0;
+    background: #161616;
 }
 
 .blog{
@@ -64,6 +65,7 @@ import Footer from '../components/Footer.vue';
     border-top-right-radius: 10px;
 }
 .blog h2 {
+    color: #fff;
     font-size: 22px;
     font-weight: 500;
     line-height: 1.3;
@@ -71,6 +73,7 @@ import Footer from '../components/Footer.vue';
 }
 
 .blog p {
+    color: #BFBFBF;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 15px;

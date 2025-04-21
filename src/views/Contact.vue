@@ -15,12 +15,7 @@ import Footer from '../components/Footer.vue';
 <title>{{ title }}</title>
 <Banners class="contact" banners="Contact"/>
 <ContactVue>
-<template #contactinfo>
-    <div class="info">
-        <p><i class="bi bi-envelope-fill"></i> Email: mehedihtml@gmail.com</p>
-        <p><i class="bi bi-skype"></i> Skype: mehedihasancmt2</p>
-    </div>
-</template>
+<template #contactinfo></template>
 </ContactVue>
 
 
@@ -32,6 +27,7 @@ import Footer from '../components/Footer.vue';
     margin-bottom: 25px;
 }
 .info p{
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 5px;

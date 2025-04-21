@@ -35,12 +35,13 @@ const faqs = ref([
 <!-- faq-area -->
 <section class="faq-area">
     <div class="containers">
-        <div class="row">
-
-            <div class="col-md-12 col-lg-8 offset-lg-2">
+        <div class="row justify-content-center">
+            <div class="col-12">
                 <div class="title text-center">
                     <h2>Frequently Asked Questions</h2>
                 </div>
+            </div>
+            <div class="col-md-12 col-lg-8">
                 <div class="faq">
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item" v-for="faq in faqs" :key="faq.id"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
@@ -84,8 +85,27 @@ const faqs = ref([
 
 .faq-area {
     padding: 80px 0;
-    background: #f4f4f4;
+    background: url(/img/portfolio-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
 }
+.faq-area::after {
+    display: block;
+    content: '';
+    clear: both;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+
 .accordion-button:focus {
     z-index: 3;
     border-color: inherit;
@@ -96,19 +116,41 @@ const faqs = ref([
 .accordion-button {
     font-size: 18px;
     font-weight: 600;
-    color: #222;
+    color: #fff;
+    
+    background: #434343;
 }
 
 .accordion-body p {
     font-size: 16px;
-    color: #36344D;
+    color: #BFBFBF;
 }
 
-
+.accordion-item {
+    background: #434343;
+    border: var(--bs-accordion-border-width) solid #525252;
+}
 .accordion-button:not(.collapsed) {
-    color: #36344D;
+    color: #fff;
     background-color: transparent;
     box-shadow:inherit;
+}
+.accordion-button::after {
+    margin-left: auto;
+    content: "\F4FE";
+    font-family: "bootstrap-icons";
+    background-image: none;
+    color: #fff;
+    font-size: 18px;
+}
+.accordion-button:not(.collapsed)::after {
+    content: "\F2EA";
+    font-family: "bootstrap-icons";
+    background-image: none;
+    -webkit-transform: inherit;
+    -ms-transform: inherit;
+    transform: inherit;
+    color: #fff;
 }
 
 
@@ -117,7 +159,6 @@ const faqs = ref([
 .accordion-button {
     font-size: 16px;
     font-weight: 500;
-    color: #222;
 }
 
 

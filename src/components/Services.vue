@@ -71,12 +71,12 @@ const services = ref( [
 
 .services-area {
     padding: 80px 0;
-    background: #f4f4f4;
+    background: #1a1a1a;
 }
 
 .services {
     margin-bottom: 45px;
-    background: #fff;
+    background: #282828;
     border-radius: 10px;
 }
 .services img {
@@ -95,7 +95,7 @@ const services = ref( [
     padding: 10px 25px;
     line-height: 1.5;
     font-weight: 500;
-    color: #222;
+    color: #fff;
 }
 
 .services h2 a{
@@ -103,7 +103,7 @@ const services = ref( [
     font-size: 18px;
     line-height: 1.5;
     font-weight: 500;
-    color: #222;
+    color: #fff;
     min-height: 60px;
 }
 

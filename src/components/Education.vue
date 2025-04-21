@@ -167,7 +167,7 @@ const trainings = ref([
 }
 .education {
     padding: 80px 0;
-    background: #f4f4f4;
+    background: #161616;
 }
 
 .educations {
@@ -192,12 +192,14 @@ const trainings = ref([
     border-radius: 50%;
 }
 .educations h3 {
+    color: #fff;
     font-size: 18px;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 15px;
 }
 .educations p {
+    color: #BFBFBF;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -210,7 +212,7 @@ const trainings = ref([
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 800;
 }
 
 @media (max-width: 991.98px) {

@@ -25,6 +25,7 @@ defineProps({
 
 
 .banners-area {
+    background-color: #161616;
     height: 300px;
     width: 100%;
     display: -webkit-box;
@@ -62,47 +63,47 @@ defineProps({
 }
 
 .about {
-    background: url('/img/about-banner.jpg');
+    background-image: url('/img/about-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .portfolio {
-    background: url('/img/portfolio-banner.jpg');
+    background-image: url('/img/portfolio-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .service {
-    background: url('/img/service-banner.jpg');
+    background-image: url('/img/service-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .blog {
-    background: url('/img/blog-banner.jpg');
+    background-image: url('/img/blog-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .blogdetails {
-    background: url('/img/blog-banner.jpg');
+    background-image: url('/img/blog-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .contact {
-    background: url('/img/contact-banner.jpg');
+    background-image: url('/img/contact-banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .notfound {
-    background: url('/img/not-fonud.jpg');
+    background-image: url('/img/not-fonud.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;

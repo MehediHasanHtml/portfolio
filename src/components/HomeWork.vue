@@ -4,34 +4,34 @@ import {ref} from 'vue'
 const works = ref([
     {
         id: 1,
+        img: '/img/mclgroupbd.png',
+        link: 'https://mclgroupbd.com/'
+    },
+    {
+        id: 2,
         img: '/img/info.png',
         link: 'http://mehedihtml.com/infoxen/index.html'
     },
     {
-        id: 2,
+        id: 3,
         img: '/img/avedi.png',
         link: 'http://mehedihtml.com/avendi/index.html'
     },
     {
-        id: 3,
+        id: 4,
         img: '/img/danwilliams.png',
         link: 'http://mehedihtml.com/danwilliams/index.html'
     },
     {
-        id: 4,
+        id: 5,
         img: '/img/ladder.png',
         link: 'http://laddersaves.org/'
     },
     {
-        id: 5,
+        id: 6,
         img: '/img/p.png',
         link: 'https://www.propelor.com/'
-    },
-    {
-        id: 6,
-        img: '/img/kl.png',
-        link: 'https://www.kluitman.nl/'
-    },
+    }
 
 ]);
 
@@ -66,9 +66,11 @@ const works = ref([
 
 .home-work {
     padding: 80px 0;
+    background: #282828;
 }
 .work {
     padding: 15px;
+    background: #303132;
     margin-bottom: 35px;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
