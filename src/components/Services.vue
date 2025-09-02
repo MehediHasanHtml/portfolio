@@ -34,8 +34,8 @@ const services = ref( [
     },
     {
         id:6,
-        servicesName: "I will be your frontend developer with figma to HTML, vue js, element plus",
-        img: "/img/frontend-developer-figma-to-vue-js.jpg",
+        servicesName: "I will be your frontend developer with figma to HTML, Vue js",
+        img: "/img/frontend-developer-figma-to-vue-js.png",
         link: "https://www.fiverr.com/s/DB0ElLQ"
     },
 ]);

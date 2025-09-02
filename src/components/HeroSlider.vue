@@ -25,7 +25,7 @@ const title = 'Frontend Developer';
                         <div class="hero-content" >
                             <div class="headdign" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                                 <h1 >{{ title }}</h1>
-                                <p>Hello, If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b>Admin Dashboard</b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Element Plus, Bootstrap 5 then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
+                                <p>Hello, If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b> Admin Dashboard </b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Nuxt, Nuxt UI, <b> Tailwind / Bootstrap 5</b> then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
                                 <img class="img-fluid my-3" src="/img/technology.png" alt="technology" loading="lazy" >
                                 <div class="btns">
                                     <router-link to="/portfolio">Portfolio</router-link>
@@ -219,7 +219,7 @@ const title = 'Frontend Developer';
 
 
 .hero-content img {
-    height: 50px;
+    height: auto;
 }
 
 }

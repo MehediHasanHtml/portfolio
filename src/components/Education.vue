@@ -6,7 +6,7 @@ const educatios = ref([
         id: 1,
         title: 'Graduation',
         date: '2017-2021',
-        dept: 'BSc In CSE (Computer Science Engineering)',
+        dept: 'BSc In CSE (Computer Science and Engineering)',
         institute: 'Green University Of Bangladesh.'
     },
     {

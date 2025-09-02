@@ -4,7 +4,7 @@ import {ref} from 'vue'
 
      
 const series = ref( [{
-    data: [95, 90, 70, 80, 60, 90, 50, 65, 90, 70]
+    data: [95, 90, 70, 80, 60, 90, 80, 50, 65, 70, 80]
     }]
 );
 
@@ -38,10 +38,11 @@ const series = ref( [{
             ['jQuery'],
             ['Vue JS'],
             ['Bootstrap'],
+            ['Tailwind'],
             ['SEO'],
             ['Git'],
-            ['Element Plus'],
-            ['Figma'],
+            ['Nuxt'],
+            ['Nuxt UI'],
         ],
         labels: {
             style: {
@@ -82,7 +83,7 @@ const series = ref( [{
                                     <div class="contx">
                                         <div class="coer">
 
-                                            <p>Hello, I am a professional Frontend developer with an overall 6+ years of experience also, an expert in HTML5, CSS3, JavaScript, jQuery, <b>Vue JS,</b> Element Plus, Bootstrap 5, Re-design, HTML & CSS bug fixes, PSD to HTML, Figma to HTML, <b>Admin Dashboard</b> and landing page design with SEO friendly, <b>mobile responsive</b>  and pixel-perfect conversion.</p>
+                                            <p>Hello, I am a professional Frontend developer with an overall 7+ years of experience also, an expert in HTML5, CSS3, JavaScript, jQuery, <b>Vue JS,</b> Nuxt, Nuxt UI, <b> Tailwind / Bootstrap 5</b> Re-design, HTML & CSS bug fixes, PSD to HTML, Figma to HTML, <b>Admin Dashboard</b> and landing page design with SEO friendly, <b>mobile responsive</b>  and pixel-perfect conversion.</p>
                                             <p> Web design is my hobby and passion. if you have any kind of work related to my skills then please contact me. Have a good day.</p>
                                              <a class="cus-btn" href="/pdf/Mehedi_Hsana_Resume.pdf" target="_blank">See Resume</a>
                                         </div>
