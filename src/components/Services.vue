@@ -15,9 +15,9 @@ const services = ref( [
     },
     {
         id:3,
-        servicesName: "design psd to responsive html website using bootstrap",
-        img: "/img/psd-to-responsive-website-usign-bootstrap.jpg",
-        link: "https://www.fiverr.com/share/5bZqo4"
+        servicesName: "develop professional frontend websites using vue, nuxt, tailwind",
+        img: "/img/develop professional frontend websites using Vue, Nuxt, and Tailwind2.png",
+        link: "https://www.fiverr.com/s/WE1GGbE"
     },
 
     {

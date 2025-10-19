@@ -6,91 +6,127 @@ const works = ref([
         id: 1,
         img: '/img/mclgroupbd.png',
         link: 'https://mclgroupbd.com/',
-        category: 'psdhtml'
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 2,
         img: '/img/info.png',
-        link: 'http://mehedihtml.com/infoxen/index.html',
-        category: 'psdhtml'
+        link: 'http://mehedihtml.com/infoxen/',
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 3,
         img: '/img/avedi.png',
-        link: 'http://mehedihtml.com/avendi/index.html',
-        category: 'psdhtml'
+        link: 'http://mehedihtml.com/avendi/',
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 4,
         img: '/img/danwilliams.png',
-        link: 'http://mehedihtml.com/danwilliams/index.html',
-        category: 'psdhtml'
+        link: 'http://mehedihtml.com/danwilliams/',
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 5,
         img: '/img/ladder.png',
         link: 'http://laddersaves.org/',
-        category: 'psdhtml'
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 6,
         img: '/img/p.png',
         link: 'https://www.propelor.com/',
-        category: 'psdhtml'
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 7,
         img: '/img/kl.png',
         link: 'https://www.kluitman.nl/',
-        category: 'psdhtml'
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 8,
         img: '/img/zeew.png',
         link: 'https://MehediHasanHtml.github.io/zeew.github.io/',
-        category: 'psdhtml'
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 9,
         img: '/img/ga.png',
         link: 'https://MehediHasanHtml.github.io/gallery.github.io/',
-        category: 'psdhtml'
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 10,
         img: '/img/homeal.png',
         link: 'https://MehediHasanHtml.github.io/perfect.github.io/',
-        category: 'psdhtml'
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 11,
         img: '/img/saderv.png',
         link: 'https://MehediHasanHtml.github.io/saderv.github.io/',
-        category: 'psdhtml'
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 12,
         img: '/img/future.png',
         link: 'https://MehediHasanHtml.github.io/future.github.io/',
-        category: 'psdhtml'
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 13,
         img: '/img/lotus.png',
         link: 'https://MehediHasanHtml.github.io/lotus.github.io/',
-        category: 'psdhtml'
+        category: 'psdhtml',
+        technology: 'html, css, jQuery, bootstrap'
     },
     {
         id: 14,
-        img: '/img/personal.png',
-        link: 'https://mehedihtml.com/',
-        category: 'vuejs'
+        img: '/img/digitalport.png',
+        link: 'https://digital-port-two.vercel.app/',
+        category: 'vuejs',
+        technology: 'Vue js, nuxt, tailwindcss, Nuxt UI, TypeScript'
     },
     {
         id: 15,
+        img: '/img/housing100.png',
+        link: 'https://housing100.vercel.app/',
+        category: 'vuejs',
+        technology: 'Vue js, Element Plus, axios, JavaScript'
+    },
+    {
+        id: 16,
+        img: '/img/cars.png',
+        link: 'https://simpsonusedcars.vercel.app/',
+        category: 'vuejs',
+        technology: 'Vue js, Element Plus, axios, JavaScript'
+    },
+    {
+        id: 17,
+        img: '/img/personal.png',
+        link: 'https://mehedihtml.com/',
+        category: 'vuejs',
+        technology: 'Vue js, Bootstrap, axios, JavaScript'
+    },
+    {
+        id: 18,
         img: '/img/mhshop.png',
         link: 'https://vue.mehedihtml.com/',
-        category: 'vuejs'
+        category: 'vuejs',
+        technology: 'Vue js, Bootstrap, axios, JavaScript'
     },
 
 ]);
@@ -105,10 +141,10 @@ const works = ref([
                 <div class="col-12">
                     <ul class="nav nav-tabs" id="myTab" role="tablist"  data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="PSD-tab" data-bs-toggle="tab" data-bs-target="#PSD-tab-pane" type="button" role="tab" aria-controls="PSD-tab-pane" aria-selected="true">PSD to HTML</button>
+                            <button class="nav-link active" id="PSD-tab" data-bs-toggle="tab" data-bs-target="#PSD-tab-pane" type="button" role="tab" aria-controls="PSD-tab-pane" aria-selected="true">Figma to HTML</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="Vue-tab" data-bs-toggle="tab" data-bs-target="#Vue-tab-pane" type="button" role="tab" aria-controls="Vue-tab-pane" aria-selected="false">Vue JS</button>
+                            <button class="nav-link" id="Vue-tab" data-bs-toggle="tab" data-bs-target="#Vue-tab-pane" type="button" role="tab" aria-controls="Vue-tab-pane" aria-selected="false">Vue / Nuxt</button>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
@@ -117,6 +153,7 @@ const works = ref([
                                 <div class="col-md-6 col-lg-4" v-for="work in works" :key="work.id">
                                     <div class="work" v-if="work.category == 'psdhtml'"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                                         <a :href="work.link" target="_blank"><img class="img-fluid" :src="work.img" :alt="work.img" loading="lazy"></a>
+                                        <p>technology: {{ work.technology }}</p>
                                     </div>
                                 </div>
                              </div>
@@ -127,6 +164,7 @@ const works = ref([
                                 <div class="col-md-6 col-lg-4" v-for="work in works" :key="work.id">
                                     <div class="work" v-if="work.category == 'vuejs'"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                                         <a :href="work.link" target="_blank"><img class="img-fluid" :src="work.img" :alt="work.img" loading="lazy"></a>
+                                        <p>technology: {{ work.technology }}</p>
                                     </div>
                                 </div>
                              </div>
@@ -202,6 +240,14 @@ const works = ref([
 .tab-pane{
     padding: 15px 0;
 }
+.tab-pane p {
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
 
 
 @media (max-width: 1440.98px) {

@@ -142,7 +142,7 @@ const stickyHeader = ref(false)
     font-size: 20px;
     color: #fff;
     font-weight: 500;
-    margin-left: 10px;
+    margin-left: 15px;
     -webkit-filter: contrast(1);
             filter: contrast(1);
 }

@@ -4,34 +4,34 @@ import {ref} from 'vue'
 const works = ref([
     {
         id: 1,
+        img: '/img/digitalport.png',
+        link: 'https://digital-port-two.vercel.app/'
+    },
+    {
+        id: 2,
+        img: '/img/housing100.png',
+        link: 'https://housing100.vercel.app/'
+    },
+    {
+        id: 3,
+        img: '/img/cars.png',
+        link: 'https://simpsonusedcars.vercel.app/'
+    },
+    {
+        id: 4,
         img: '/img/mclgroupbd.png',
         link: 'https://mclgroupbd.com/'
     },
     {
-        id: 2,
-        img: '/img/info.png',
-        link: 'http://mehedihtml.com/infoxen/index.html'
-    },
-    {
-        id: 3,
-        img: '/img/avedi.png',
-        link: 'http://mehedihtml.com/avendi/index.html'
-    },
-    {
-        id: 4,
-        img: '/img/danwilliams.png',
-        link: 'http://mehedihtml.com/danwilliams/index.html'
-    },
-    {
         id: 5,
-        img: '/img/ladder.png',
-        link: 'http://laddersaves.org/'
+        img: '/img/info.png',
+        link: 'http://mehedihtml.com/infoxen/'
     },
     {
         id: 6,
-        img: '/img/p.png',
-        link: 'https://www.propelor.com/'
-    }
+        img: '/img/avedi.png',
+        link: 'http://mehedihtml.com/avendi/'
+    },
 
 ]);
 

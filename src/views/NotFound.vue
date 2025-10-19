@@ -18,7 +18,7 @@ const title = ref('404 page not found | Mehedi Hasan');
         <div class="roq">
             <div class="col-12 text-center"  data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                 <div class="title">
-                    <h2>404 Page Not Found! 🤪</h2>
+                    <h2>404 Page Not Found! 👨‍💻</h2>
                     <router-link class="cus-btn" to="/"><i class="bi bi-house-door-fill"></i> Go back to home</router-link>
                 </div>
             </div>
