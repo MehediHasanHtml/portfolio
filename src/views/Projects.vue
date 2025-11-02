@@ -6,7 +6,7 @@ import FAQ from '../components/FAQ.vue'
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 
-const title = ref('Portfolio | Mehedi Hasan');
+const title = ref('Projects | Mehedi Hasan');
 
 </script>
 

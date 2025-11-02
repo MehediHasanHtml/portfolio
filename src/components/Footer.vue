@@ -10,9 +10,9 @@
                 <div class="col-md-6 col-lg-4 footerrow">
                     <div class="footers-grid"  data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                         <img class="img-fluid flogo" src="/img/logo-white.png" alt="logo">
-                        <p><i class="bi bi-envelope-fill"></i> Email: mehedihtml@gmail.com</p>
-                        <p><i class="bi bi-telephone-fill"></i> Phone: 01751144041</p>
-                        <p><i class="bi bi-telephone-fill"></i> Address: Mirpur 10, Dhaka, Bangladesh</p>
+                        <p><i class="bi bi-envelope"></i> Email: mehedihtml@gmail.com</p>
+                        <p><i class="bi bi-telephone"></i> Phone: 01751144041</p>
+                        <p><i class="bi bi-map"></i> Address: Mirpur 10, Dhaka, Bangladesh</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 footerrow">

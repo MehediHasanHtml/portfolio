@@ -5,7 +5,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 import Services from '../views/Services.vue'
-import Portfolio from '../views/Portfolio.vue'
+import Projects from '../views/Projects.vue'
 import Blog from '../views/Blog.vue'
 import BlogDetails from '../views/BlogDetails.vue'
 import NotFound from '../views/NotFound.vue'
@@ -39,9 +39,9 @@ const router = createRouter({
             name: Services
         },
         {
-            path: '/portfolio',
-            component: Portfolio,
-            name: Portfolio
+            path: '/projects',
+            component: Projects,
+            name: Projects
         },
         {
             path: '/blog',

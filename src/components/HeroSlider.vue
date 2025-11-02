@@ -1,7 +1,6 @@
 <script setup>
 import {reactive, ref} from 'vue'
 
-const title = 'Frontend Developer';
 
 
 
@@ -24,8 +23,10 @@ const title = 'Frontend Developer';
                     <div class="col-lg-8">
                         <div class="hero-content" >
                             <div class="headdign" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                                <h1 >{{ title }}</h1>
-                                <p>Hello, If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b> Admin Dashboard </b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Nuxt, Nuxt UI, <b> Tailwind / Bootstrap 5</b> then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
+                                <h4>Hello! I’m</h4>
+                                <h1>Mehedi Hasan</h1>
+                                <h2>Frontend Developer</h2>
+                                <p>If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b> Admin Dashboard </b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Nuxt, Nuxt UI, <b> Tailwind CSS / Bootstrap 5</b> then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
                                 <img class="img-fluid my-3" src="/img/technology.png" alt="technology" loading="lazy" >
                                 <div class="btns">
                                     <router-link to="/portfolio">Portfolio</router-link>
@@ -98,7 +99,6 @@ const title = 'Frontend Developer';
     font-size: 75px;
     color: #fff;
     line-height: 1.3;
-    margin-bottom: 15px;
     -webkit-filter: contrast(1);
             filter: contrast(1);
             position: relative;
@@ -148,6 +148,24 @@ const title = 'Frontend Developer';
     }
 }
 
+.hero-content h4 {
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.3;
+    font-weight: 400;
+    margin-bottom: 10px;
+    -webkit-filter: contrast(1);
+            filter: contrast(1);
+}
+.hero-content h2 {
+    font-size: 42px;
+    color: #dfdfdf;
+    line-height: 1.3;
+    font-weight: 700;
+    margin-bottom: 10px;
+    -webkit-filter: contrast(1);
+            filter: contrast(1);
+}
 .hero-content p {
     font-size: 16px;
     color: #fff;
@@ -205,6 +223,12 @@ const title = 'Frontend Developer';
 .hero-content h1 {
     font-size: 50px;
 }
+.hero-content h2 {
+    font-size: 36px;
+}
+.hero-content h4 {
+    font-size: 20px;
+}
 
 }
 
@@ -216,7 +240,12 @@ const title = 'Frontend Developer';
 .hero-content p {
     font-size: 16px;
 }
-
+.hero-content h2 {
+    font-size: 30px;
+}
+.hero-content h4 {
+    font-size: 18px;
+}
 
 .hero-content img {
     height: auto;
@@ -228,6 +257,21 @@ const title = 'Frontend Developer';
 @media (max-width: 767.98px) {
 .hero-content h1 {
     font-size: 30px;
+}
+
+.hero-content h2 {
+    font-size: 24px;
+}
+.hero-content h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.hero-content .my-3 {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+.hero-content p {
+    font-size: 15px;
 }
 
 .carousel__item img {

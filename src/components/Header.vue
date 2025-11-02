@@ -43,7 +43,7 @@ const stickyHeader = ref(false)
                                     <router-link class="nav-link" to="/about">About</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
+                                    <router-link class="nav-link" to="/projects">Projects</router-link>
                                 </li>
                                 <li class="nav-item">
                                     <router-link class="nav-link" to="/services">Services</router-link>
