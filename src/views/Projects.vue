@@ -6,13 +6,11 @@ import FAQ from '../components/FAQ.vue'
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
 
-const title = ref('Projects | Mehedi Hasan');
 
 </script>
 
 <template>
 <Header class="shadows" />
-<title>{{ title }}</title>
 <Banners class="portfolio" banners="Recent Work"/>
 
 <div class="notes">

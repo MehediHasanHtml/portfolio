@@ -1,6 +1,5 @@
 <script setup>
 import {ref, onBeforeMount, reactive} from 'vue'
-const title = ref('Blog | Mehedi Hasan');
 import Banners from '../components/Banners.vue';
 import Blogs from '../store/store.json';
 import Header from '../components/Header.vue';
@@ -24,7 +23,6 @@ import Footer from '../components/Footer.vue';
 <template>
 
 <Header class="shadows" />
-<title>{{ title }}</title>
 <Banners class="blogdetails" banners="Blog" />
 
 <!-- blog-area -->

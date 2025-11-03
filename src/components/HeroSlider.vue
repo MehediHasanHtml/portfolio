@@ -29,7 +29,7 @@ import {reactive, ref} from 'vue'
                                 <p>If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b> Admin Dashboard </b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Nuxt, Nuxt UI, <b> Tailwind CSS / Bootstrap 5</b> then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
                                 <img class="img-fluid my-3" src="/img/technology.png" alt="technology" loading="lazy" >
                                 <div class="btns">
-                                    <router-link to="/portfolio">Portfolio</router-link>
+                                    <router-link to="/projects">Projects</router-link>
                                     <a class="cus-btn" href="/pdf/Mehedi_Hsana_Resume.pdf" target="_blank">See Resume</a>
                                 </div>
                             </div>

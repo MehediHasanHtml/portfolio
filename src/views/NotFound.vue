@@ -3,14 +3,12 @@ import {ref} from 'vue'
 import Banners from '../components/Banners.vue'
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
-const title = ref('404 page not found | Mehedi Hasan');
 
 
 </script>
 
 <template>
 <Header class="shadows" />
-<title>{{ title }}</title>
 <Banners class="notfound" banners="Ooops!"/>
 <!-- notfound -->
 <section class="notfound-area">

@@ -2,7 +2,6 @@
 import {ref, reactive, onBeforeMount} from 'vue'
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
-const title = ref('Blog Details | Mehedi Hasan');
 import Banners from '../components/Banners.vue';
 import {useRoute } from 'vue-router'
 import Blogs from '../store/store.json';
@@ -30,7 +29,6 @@ const id = route.params.id;
 <template>
 <Header class="shadows"/>
 
-<title>{{ title }}</title>
 <Banners class="blogdetails" banners="Blog deatails" />
 
 <!-- blog-area -->

@@ -10,7 +10,6 @@ import Contact from '../components/Contact.vue';
 import FAQs from '../components/FAQ.vue';
 import Footer from '../components/Footer.vue';
 
-const title = ref('Home | Mehedi Hasan');
 
 </script>
 
@@ -19,8 +18,6 @@ const title = ref('Home | Mehedi Hasan');
 
 <Header />
 
-
-    <title>{{ title }}</title>
     <HeroSlider/>
     <HomeAbout>
         <template v-slot:button>

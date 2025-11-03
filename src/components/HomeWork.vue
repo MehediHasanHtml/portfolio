@@ -53,7 +53,7 @@ const works = ref([
                     </div>
                 </div>
                 <div class="col-12 text-center"  data-aos="fade-up" data-aos-delay="150">
-                    <router-link to="/portfolio" class="cus-btn">See more</router-link>
+                    <router-link to="/projects" class="cus-btn">See more</router-link>
                 </div>
             </div>
         </div>

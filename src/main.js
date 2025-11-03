@@ -14,6 +14,8 @@ import 'nprogress/nprogress.css'
 import './style.css'
 
 
+import { createHead, useHead } from '@vueuse/head'
+const head = createHead()
 
 AOS.init({
     ease: 'slide',
@@ -21,7 +23,24 @@ AOS.init({
 });
 
 
+router.afterEach((to) => {
+  const title = to.meta.title || 'Mehedi Hasan | Frontend developer in Bangladesh'
+  const description = to.meta.description || "Hello, I'm Mehedi Hasan. Are you looking for a frontend developer to convert Figma to Html, Admin Dashboard and pixel-perfect using Vue/Nuxt, Tailwind CSS?"
+  const canonicalUrl = `https://mehedihtml.com${to.fullPath}`
+
+  useHead({
+    title,
+    meta: [
+      { name: 'description', content: description }
+    ],
+    link: [
+      { rel: 'canonical', href: canonicalUrl }
+    ]
+  })
+})
+
 const app = createApp(App)
 app.use(VueApexCharts)
 app.use(router)
+app.use(head)
 app.mount('#app')

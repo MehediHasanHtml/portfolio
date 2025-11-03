@@ -21,43 +21,75 @@ const router = createRouter({
     routes: [{
             path: '/',
             component: Home,
-            name: Home
+            name: Home,
+            meta: {
+                title: 'Home | Mehedi Hasan - Frontend Developer Portfolio',
+                description: "Welcome to Mehedi Portfolio — a passionate Frontend Developer specializing in modern, responsive, and SEO-optimized web applications built with Vue.js, React, and Tailwind CSS. Explore projects, skills, and contact details here."
+            }
         },
         {
             path: '/about',
             component: About,
-            name: About
+            name: About,
+            meta: {
+                title: 'About | Mehedi Hasan - Frontend Developer Portfolio',
+                description: "I’m Mehedi Hasan, a Frontend Developer with a focus on creating fast, user-friendly, and visually engaging websites. With a strong background in HTML, CSS, JavaScript, and Vue.js, I aim to bring design ideas to life with clean, maintainable code."
+            }
         },
         {
             path: '/contact',
             component: Contact,
-            name: Contact
+            name: Contact,
+            meta: {
+                title: 'Contact | Mehedi Hasan - Get in Touch',
+                description: "Want to collaborate or hire me for your next project? Reach out through the contact page — I’m available for freelance, remote, and full-time opportunities in web development."
+            }
         },
         {
             path: '/services',
             component: Services,
-            name: Services
+            name: Services,
+            meta: {
+                title: 'Services | Mehedi Hasan - Web Design & Frontend Development',
+                description: "Offering professional web design, responsive frontend development, and performance optimization services. I help businesses build modern, accessible, and high-performing web applications that stand out online."
+            }
         },
         {
             path: '/projects',
             component: Projects,
-            name: Projects
+            name: Projects,
+            meta: {
+                title: 'Projects | Mehedi Hasan - Portfolio Showcase',
+                description: "Explore my portfolio of web development projects built with Vue.js, React, and Tailwind CSS. Each project demonstrates real-world problem-solving, clean code structure, and modern UI/UX design practices."
+            }
         },
         {
             path: '/blog',
             component: Blog,
-            name: Blog
+            name: Blog,
+            meta: {
+                title: 'Blog | Mehedi Hasan - Frontend developer in Bangladesh',
+                description: "Hello, I'm Mehedi Hasan. Are you looking for a frontend developer to convert Figma to Html, Admin Dashboard and pixel-perfect using Vue/Nuxt, Tailwind CSS?"
+            }
 
         },
         {
             path: '/blogdetails/:id',
             component: BlogDetails,
-            name: 'post'
+            name: 'post',
+            meta: {
+                title: 'Blog Details | Mehedi Hasan - Frontend developer in Bangladesh',
+                description: "Hello, I'm Mehedi Hasan. Are you looking for a frontend developer to convert Figma to Html, Admin Dashboard and pixel-perfect using Vue/Nuxt, Tailwind CSS?"
+            }
         },
         {
             path: '/:pathMatch(.*)*',
             component: NotFound,
-            name: NotFound
+            name: NotFound,
+            meta: {
+                title: '404 | Page not found - Mehedi Hasan',
+                description: "Oops! The page you are looking for doesn’t exist or has been moved. Return to the homepage to continue exploring Mehedi HTML’s web development projects and services."
+            }
         },
     ],
 })
