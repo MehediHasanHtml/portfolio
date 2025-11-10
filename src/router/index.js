@@ -23,7 +23,7 @@ const router = createRouter({
             component: Home,
             name: Home,
             meta: {
-                title: 'Home | Mehedi Hasan - Frontend Developer Portfolio',
+                title: 'Home | Mehedi Hasan - Frontend Developer',
                 description: "Welcome to Mehedi Portfolio — a passionate Frontend Developer specializing in modern, responsive, and SEO-optimized web applications built with Vue.js, React, and Tailwind CSS. Explore projects, skills, and contact details here."
             }
         },
@@ -68,7 +68,7 @@ const router = createRouter({
             component: Blog,
             name: Blog,
             meta: {
-                title: 'Blog | Mehedi Hasan - Frontend developer in Bangladesh',
+                title: 'Blog | Web Design & Frontend Development',
                 description: "Hello, I'm Mehedi Hasan. Are you looking for a frontend developer to convert Figma to Html, Admin Dashboard and pixel-perfect using Vue/Nuxt, Tailwind CSS?"
             }
 
@@ -87,7 +87,7 @@ const router = createRouter({
             component: NotFound,
             name: NotFound,
             meta: {
-                title: '404 | Page not found - Mehedi Hasan',
+                title: '404 | Mehedi Hasan - Page not found',
                 description: "Oops! The page you are looking for doesn’t exist or has been moved. Return to the homepage to continue exploring Mehedi HTML’s web development projects and services."
             }
         },

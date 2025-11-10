@@ -7,98 +7,98 @@ const works = ref([
         img: '/img/mclgroupbd.png',
         link: 'https://mclgroupbd.com/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 2,
         img: '/img/info.png',
         link: 'http://mehedihtml.com/infoxen/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 3,
         img: '/img/avedi.png',
         link: 'http://mehedihtml.com/avendi/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 4,
         img: '/img/danwilliams.png',
         link: 'http://mehedihtml.com/danwilliams/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 5,
         img: '/img/ladder.png',
         link: 'http://laddersaves.org/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 6,
         img: '/img/p.png',
         link: 'https://www.propelor.com/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 7,
         img: '/img/kl.png',
         link: 'https://www.kluitman.nl/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 8,
         img: '/img/zeew.png',
         link: 'https://MehediHasanHtml.github.io/zeew.github.io/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 9,
         img: '/img/ga.png',
         link: 'https://MehediHasanHtml.github.io/gallery.github.io/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 10,
         img: '/img/homeal.png',
         link: 'https://MehediHasanHtml.github.io/perfect.github.io/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 11,
         img: '/img/saderv.png',
         link: 'https://MehediHasanHtml.github.io/saderv.github.io/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 12,
         img: '/img/future.png',
         link: 'https://MehediHasanHtml.github.io/future.github.io/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 13,
         img: '/img/lotus.png',
         link: 'https://MehediHasanHtml.github.io/lotus.github.io/',
         category: 'psdhtml',
-        technology: 'html, css, jQuery, bootstrap'
+        technology: 'HTML, CSS, jQuery, Bootstrap'
     },
     {
         id: 14,
         img: '/img/digitalport.png',
         link: 'https://digital-port-two.vercel.app/',
         category: 'vuejs',
-        technology: 'Vue js, nuxt, tailwindcss, Nuxt UI, TypeScript'
+        technology: 'Vue js, Nuxt, tailwind CSS, Nuxt UI, TypeScript'
     },
     {
         id: 15,

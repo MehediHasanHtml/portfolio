@@ -22,15 +22,14 @@
                             <li><router-link to="/">Home</router-link></li>
                             <li><router-link to="/about">About</router-link></li>
                             <li><router-link to="/services">Services</router-link></li>
-                            <li><router-link to="/portfolio">Portfolio</router-link></li>
-                            <li><router-link to="/blog">Blog</router-link></li>
+                            <li><router-link to="/projects">Projects</router-link></li>
                             <li><router-link to="/contact">Contact</router-link></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 footerrow">
                     <div class="footers-grid"  data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
-                        <h3>Social</h3>
+                        <h3>Connect with me:</h3>
                         <ul class="social">
                             <li><a href="https://www.facebook.com/mehedihasancse3/" target="_blank"><i class="bi bi-facebook"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/mehedi-hasan-020a47168/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
@@ -118,6 +117,9 @@
 @media (max-width: 991.98px) {
 .footerrow {
     display: block;
+}
+.footers-grid h3 {
+    font-size: 18px;
 }
 
 }

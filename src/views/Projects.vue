@@ -11,7 +11,7 @@ import Footer from '../components/Footer.vue';
 
 <template>
 <Header class="shadows" />
-<Banners class="portfolio" banners="Recent Work"/>
+<Banners class="portfolio" banners="Recent Projects"/>
 
 <div class="notes">
       <p>NB: I worked on many projects but I can't share this because the company is out of rules 👨‍💻</p>

@@ -44,7 +44,7 @@ const works = ref([
             <div class="row">
                 <div class="col-12 text-center">
                     <div class="title">
-                        <h2>Recent Works</h2>
+                        <h2>Recent Projects</h2>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4" v-for="work in works" :key="work.id">

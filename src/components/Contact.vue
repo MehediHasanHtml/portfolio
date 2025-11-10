@@ -49,7 +49,8 @@ const submitForm = async () => {
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="contacts"  data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
-                    <h3>Contact Us</h3>
+                    <h3>Get In Touch</h3>
+                    <p>Let's Build Something Amazing Together!</p>
                     <slot name="contactinfo">
 
                     </slot>
@@ -150,6 +151,13 @@ iframe {
 
 .contacts h3 {
     font-size: 30px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.contacts p {
+    font-size: 16px;
     color: #fff;
     line-height: 1.5;
     font-weight: 600;

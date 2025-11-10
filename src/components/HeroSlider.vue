@@ -25,8 +25,7 @@ import {reactive, ref} from 'vue'
                             <div class="headdign" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
                                 <h4>Hello! I’m</h4>
                                 <h1>Mehedi Hasan</h1>
-                                <h2>Frontend Developer</h2>
-                                <p>If you're looking for a frontend developer to convert <b>PSD to HTML,</b> Figma to HTML, Figma to Vue js, <b> Admin Dashboard </b>  and landing page design With SEO friendly and pixel-perfect using <b>Vue js</b>, Nuxt, Nuxt UI, <b> Tailwind CSS / Bootstrap 5</b> then this is exactly what I specialize in. Talk about a perfect match. 👇</p>
+                                <p>Passionate Frontend Developer skilled in HTML, CSS, JavaScript, and modern frameworks like Vue JS / Nuxt. Eager to create responsive, user-friendIy web applications and contribute to a dynamic team. Focused on continuous learning and delivering high-quality digital experiences.</p>
                                 <img class="img-fluid my-3" src="/img/technology.png" alt="technology" loading="lazy" >
                                 <div class="btns">
                                     <router-link to="/projects">Projects</router-link>
@@ -96,7 +95,7 @@ import {reactive, ref} from 'vue'
 }
 
 .hero-content h1 {
-    font-size: 75px;
+    font-size: 85px;
     color: #fff;
     line-height: 1.3;
     -webkit-filter: contrast(1);
@@ -167,7 +166,7 @@ import {reactive, ref} from 'vue'
             filter: contrast(1);
 }
 .hero-content p {
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     line-height: 1.5;
     font-weight: 400;
@@ -221,7 +220,8 @@ import {reactive, ref} from 'vue'
 @media (max-width: 1199.98px) {
 
 .hero-content h1 {
-    font-size: 50px;
+    font-size: 60px;
+    margin-bottom: 10px;
 }
 .hero-content h2 {
     font-size: 36px;
@@ -235,7 +235,7 @@ import {reactive, ref} from 'vue'
 
 @media (max-width: 991.98px) {
 .hero-content h1 {
-    font-size: 40px;
+    font-size: 50px;
 }
 .hero-content p {
     font-size: 16px;
